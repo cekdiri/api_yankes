@@ -85,15 +85,30 @@ def index():
     return jsonify({
             'message': 'API for realtime bed monitoring',
             'paths': { 
-                '/hospitals': 'retrieve hospitals',
+                '/province': 'retrieve province',
+                '/hospitals/<int:id>': 'retrieve hospitals in a province. use id from /province',
+                '/occupation/<int:id>': 'retrieve occupations for every hospitals in a province. use id from /province',
                 '/isolations': 'retrieve isolation rooms'
             }
         })
 
-@app.route('/hospitals',  methods=['GET'])
-def all():
-    hospitals = RumahSakit.select().dicts()
+
+@app.route('/province',  methods=['GET'])
+def provinces():
+    province = Province.select().dicts()
+    return jsonify({'rows':list(province)})
+
+@app.route('/hospitals/<int:idprov>',  methods=['GET'])
+def hospital(idprov):
+    hospitals = RumahSakit.select().where(RumahSakit.prov_id==idprov).dicts()
     return jsonify({'rows':list(hospitals)})
+
+@app.route('/occupation/<int:idprov>',  methods=['GET'])
+def okupansi(idprov):
+    occupation = Occupations.select().join(RumahSakit).where(RumahSakit.prov_id==idprov)
+    occp = [model_to_dict(ocp, recurse=True) for ocp in occupation]
+    return jsonify({'rows':list(occp)})
+
 
 @app.route('/isolations', methods=['GET'])
 def isolations():
