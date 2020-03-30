@@ -246,5 +246,5 @@ for kode in kode_rs:
                         )
             i = i +1
 
-
+db.close()
 

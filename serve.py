@@ -76,8 +76,6 @@ class Occupations(BaseModel):
 
 
 db.connect()
-db.create_tables([JenisFaskes, Province, RumahSakit, Jenis_Ruang, Kelas_Ruang, Occupations], safe=True)
-
 
 
 @app.route('/')
