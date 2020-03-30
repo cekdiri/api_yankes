@@ -75,7 +75,6 @@ class Occupations(BaseModel):
     created_at = pw.DateTimeField(default=datetime.utcnow())
 
 
-db.connect()
 
 
 @app.route('/')
