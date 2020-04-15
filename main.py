@@ -245,6 +245,8 @@ for kode in kode_rs:
                             last_update = update
                         )
             i = i +1
+browser.stop_client()
+browser.close()
 browser.quit()
 db.close()
 
