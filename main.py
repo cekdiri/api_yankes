@@ -20,11 +20,6 @@ chrome_options.add_argument('--window-size=1420,1080')
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-gpu')
 
-try:
-    browser = webdriver.Chrome(chrome_options=chrome_options)
-except:
-    browser = webdriver.Chrome('chromedriver/chromedriver', options=chrome_options)
-
 app = Flask(__name__)
 app.config.from_pyfile('settings.cfg')
 
@@ -111,6 +106,11 @@ with open('data/faskes_rumahsakit.csv', 'r')  as fle:
 
 for kode in kode_rs:
     
+    try:
+        browser = webdriver.Chrome(chrome_options=chrome_options)
+    except:
+        browser = webdriver.Chrome('chromedriver/chromedriver', options=chrome_options)
+
     link = 'http://sirs.yankes.kemkes.go.id/integrasi/data/bed_monitor.php?satker='+str(kode)
     browser.get(link)
     #print(r)
@@ -245,8 +245,8 @@ for kode in kode_rs:
                             last_update = update
                         )
             i = i +1
-browser.stop_client()
-browser.close()
-browser.quit()
+    browser.stop_client()
+    browser.close()
+    browser.quit()
 db.close()
 
