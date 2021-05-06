@@ -75,6 +75,16 @@ class Occupations(BaseModel):
     created_at = pw.DateTimeField(default=datetime.utcnow())
 
 
+class CovidOccupations(BaseModel):
+    rumahsakit = pw.ForeignKeyField(RumahSakit)
+    jenis_ruang = pw.ForeignKeyField(Jenis_Ruang)
+    kelas_ruang = pw.ForeignKeyField(Kelas_Ruang)
+    total_kamar = pw.IntegerField(default=0)
+    total_terisi = pw.IntegerField(default=0)
+    total_kosong = pw.IntegerField(default=0)
+    last_update = pw.DateTimeField()
+    created_at = pw.DateTimeField(default=datetime.utcnow())
+
 
 
 @app.route('/')
@@ -106,6 +116,14 @@ def okupansi(idprov):
     occp = [model_to_dict(ocp, recurse=True) for ocp in occupation]
     return jsonify({'rows':list(occp)})
 
+
+@app.route('/cov-occupation/<int:idprov>',  methods=['GET'])
+def covokupansi(idprov):
+    skrg = datetime.now().strftime('%Y-%m-%d')
+    skrg = datetime.strptime(skrg, '%Y-%m-%d')
+    occupation = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==idprov, CovidOccupations.last_update > skrg).order_by(CovidOccupations.total_kosong)
+    occp = [model_to_dict(ocp, recurse=True) for ocp in occupation]
+    return jsonify({'rows':list(occp)})
 
 @app.route('/isolations', methods=['GET'])
 def isolations():

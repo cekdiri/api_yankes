@@ -103,13 +103,13 @@ with open('data/faskes_rumahsakit.csv', 'r')  as fle:
             )
         kode_rs.append(row['kode_rs'])
 
+    
+try:
+    browser = webdriver.Chrome(chrome_options=chrome_options)
+except:
+    browser = webdriver.Chrome('chromedriver/chromedriver', options=chrome_options)
 
 for kode in kode_rs:
-    
-    try:
-        browser = webdriver.Chrome(chrome_options=chrome_options)
-    except:
-        browser = webdriver.Chrome('chromedriver/chromedriver', options=chrome_options)
 
     link = 'http://sirs.yankes.kemkes.go.id/integrasi/data/bed_monitor.php?satker='+str(kode)
     browser.get(link)
@@ -245,8 +245,8 @@ for kode in kode_rs:
                             last_update = update
                         )
             i = i +1
-    browser.stop_client()
-    browser.close()
-    browser.quit()
+browser.stop_client()
+browser.close()
+browser.quit()
 db.close()
 
