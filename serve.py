@@ -94,7 +94,7 @@ def index():
             'paths': { 
                 '/province': 'retrieve province',
                 '/hospitals/<int:id>': 'retrieve hospitals in a province. use id from /province',
-                '/occupation/<int:id>': 'retrieve occupations for every hospitals in a province. use id from /province',
+                '/ketersediaan-kamar/<int:id>': 'retrieve occupations for every hospitals in a province. use id from /province',
                 '/isolations': 'retrieve isolation rooms'
             }
         })
