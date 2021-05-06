@@ -117,7 +117,7 @@ def okupansi(idprov):
     return jsonify({'rows':list(occp)})
 
 
-@app.route('/cov-occupation/<int:idprov>',  methods=['GET'])
+@app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
 def covokupansi(idprov):
     skrg = datetime.now().strftime('%Y-%m-%d')
     skrg = datetime.strptime(skrg, '%Y-%m-%d')
