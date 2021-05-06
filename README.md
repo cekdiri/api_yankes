@@ -21,6 +21,6 @@ Installation
 Usage
 ---
     Copy file settings.cfg.tpl, rename jadi `settings.cfg`. Isikan data config.
-    Jalankan `python main.py` di cron. 
+    Jalankan `python scrape.py` di cron. 
     Jalankan `python serve.py` untuk menjalankan API servernya
 
