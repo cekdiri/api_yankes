@@ -119,9 +119,8 @@ def okupansi(idprov):
 
 @app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
 def covokupansi(idprov):
-    skrg = datetime.now().strftime('%Y-%m-%d')
-    skrg = datetime.strptime(skrg, '%Y-%m-%d')
-    occupation = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==idprov, CovidOccupations.last_update > skrg).order_by(CovidOccupations.total_kosong)
+    skrg = datetime.now() - timedelta(hours=8)
+    occupation = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==idprov, CovidOccupations.created_at >= skrg).order_by(CovidOccupations.total_kosong)
     occp = [model_to_dict(ocp, recurse=True) for ocp in occupation]
     return jsonify({'rows':list(occp)})
 

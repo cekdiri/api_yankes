@@ -191,12 +191,6 @@ for index, row in faskes_df.iterrows():
                         total_kosong = _total_kosong,                        
                         last_update = update
                     )
-                else:
-                    occupation = CovidOccupations.update(total_terisi=_total_terisi, total_kamar=_total_kamar, total_kosong=_total_kosong).where(CovidOccupations.rumahsakit==rs, 
-                                                            CovidOccupations.jenis_ruang==ruang, CovidOccupations.kelas_ruang==kelas, 
-                                                            CovidOccupations.last_update==update)
-                    occupation.execute()
-                    print('update - '+str(satker)+'-'+str(i))
         i+=1
 browser.stop_client()
 browser.close()
