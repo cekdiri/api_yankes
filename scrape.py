@@ -2,7 +2,6 @@ import pandas as pd
 from bs4 import BeautifulSoup as soup
 import csv
 from pathlib import Path
-import datetime
 import selenium
 from selenium import webdriver
 from flask import Flask, render_template, request, jsonify, redirect, make_response
@@ -176,7 +175,7 @@ for index, row in faskes_df.iterrows():
                     kelas = Kelas_Ruang.create(title=_jenis_ruang)
                 else:
                     kelas = kelas.get()   
-                update = dateparser.parse(_last_update)
+                update = datetime.strptime(_last_update, '%d-%m-%Y %H:%M:%S')
 
                 occupation = CovidOccupations.select().where(CovidOccupations.rumahsakit==rs, 
                     CovidOccupations.jenis_ruang==ruang, CovidOccupations.kelas_ruang==kelas, 
@@ -191,6 +190,7 @@ for index, row in faskes_df.iterrows():
                         total_kosong = _total_kosong,                        
                         last_update = update
                     )
+                    print('save update '+str(update))
         i+=1
 browser.stop_client()
 browser.close()

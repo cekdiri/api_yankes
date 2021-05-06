@@ -119,10 +119,40 @@ def okupansi(idprov):
 
 @app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
 def covokupansi(idprov):
-    skrg = datetime.now() - timedelta(hours=8)
-    occupation = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==idprov, CovidOccupations.created_at >= skrg).order_by(CovidOccupations.total_kosong)
-    occp = [model_to_dict(ocp, recurse=True) for ocp in occupation]
-    return jsonify({'rows':list(occp)})
+    rumkit = RumahSakit.select().where(RumahSakit.prov_id==idprov)
+    result = {}
+    for rum in rumkit:
+        if not rum.nama_unit in result.keys():
+            result[rum.nama_unit] = {}
+        occ = CovidOccupations.select().where(CovidOccupations.rumahsakit==rum)
+        if occ.count() > 0:
+            for oc in occ:
+                if not oc.jenis_ruang.title in result[rum.nama_unit].keys():
+                    result[rum.nama_unit][oc.jenis_ruang.title] = {
+                        'kamar_kosong': oc.total_kosong,
+                        'kamar_terisi': oc.total_terisi,
+                        'kamar_total': oc.total_kamar,
+                        'last_update': oc.last_update
+                    }
+                else:
+                    if oc.last_update > result[rum.nama_unit][oc.jenis_ruang.title]['last_update']:
+                        result[rum.nama_unit][oc.jenis_ruang.title] = {
+                            'kamar_kosong': oc.total_kosong,
+                            'kamar_terisi': oc.total_terisi,
+                            'kamar_total': oc.total_kamar,
+                            'last_update': oc.last_update
+                        }
+            result[rum.nama_unit]['Alamat'] = {
+                'alamat': rum.alamat,
+                'lat': rum.lat,
+                'lon': rum.lon
+            }
+    newresult = {}
+    for k, v in result.items():
+        if isinstance(v, dict):
+            if len(v) > 0:
+                newresult[k] = v
+    return jsonify(newresult)
 
 @app.route('/isolations', methods=['GET'])
 def isolations():
