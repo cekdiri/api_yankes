@@ -120,39 +120,71 @@ def okupansi(idprov):
 @app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
 def covokupansi(idprov):
     rumkit = RumahSakit.select().where(RumahSakit.prov_id==idprov)
-    result = {}
+    result = []
     for rum in rumkit:
-        if not rum.nama_unit in result.keys():
-            result[rum.nama_unit] = {}
-        occ = CovidOccupations.select().where(CovidOccupations.rumahsakit==rum)
-        if occ.count() > 0:
-            for oc in occ:
-                if not oc.jenis_ruang.title in result[rum.nama_unit].keys():
-                    result[rum.nama_unit][oc.jenis_ruang.title] = {
-                        'kamar_kosong': oc.total_kosong,
-                        'kamar_terisi': oc.total_terisi,
-                        'kamar_total': oc.total_kamar,
-                        'last_update': oc.last_update
-                    }
-                else:
-                    if oc.last_update > result[rum.nama_unit][oc.jenis_ruang.title]['last_update']:
-                        result[rum.nama_unit][oc.jenis_ruang.title] = {
-                            'kamar_kosong': oc.total_kosong,
-                            'kamar_terisi': oc.total_terisi,
-                            'kamar_total': oc.total_kamar,
-                            'last_update': oc.last_update
-                        }
-            result[rum.nama_unit]['Alamat'] = {
+        subresult = {}
+        if len(result) > 0:
+            if not rum.nama_unit in [a['nama'] for a in result]:
+                subresult['nama'] = rum.nama_unit
+                subresult['alamat'] = {
+                    'alamat': rum.alamat,
+                    'lat': rum.lat,
+                    'lon': rum.lon
+                }
+                subresult['kamar'] = []
+            else:
+                index = None
+                for idx,a in enumerate(result):
+                    if a['nama'] == rum.nama_unit:
+                        index = idx
+                if index:
+                    subresult = result[idx]['kamar']
+        else:
+            subresult['nama'] = rum.nama_unit
+            subresult['alamat'] = {
                 'alamat': rum.alamat,
                 'lat': rum.lat,
                 'lon': rum.lon
             }
-    newresult = {}
-    for k, v in result.items():
-        if isinstance(v, dict):
-            if len(v) > 0:
-                newresult[k] = v
-    return jsonify(newresult)
+            subresult['kamar'] = []
+
+        occ = CovidOccupations.select().where(CovidOccupations.rumahsakit==rum)
+        if occ.count() > 0:
+            for oc in occ:
+                if len(subresult['kamar']) > 0:
+                    if not oc.jenis_ruang.title in [a['nama'] for a in subresult['kamar']]:
+                        subresult['kamar'].append({
+                            'nama': oc.jenis_ruang.title,
+                            'status':{
+                                'kamar_kosong': oc.total_kosong,
+                                'kamar_terisi': oc.total_terisi,
+                                'kamar_total': oc.total_kamar
+                            },
+                            'last_update': oc.last_update
+                        })
+                    else:
+                        for sub in subresult['kamar']:
+                            if sub['nama'] == oc.jenis_ruang.title:
+                                if oc.last_update > sub['last_update']:
+                                    sub['last_update'] = oc.last_update
+                                    sub['status']['kamar_kosong'] = oc.total_kosong
+                                    sub['status']['kamar_terisi'] = oc.total_terisi
+                                    sub['status']['kamar_total'] = oc.total_kamar
+                else:
+                    subresult['kamar'].append({
+                            'nama': oc.jenis_ruang.title,
+                            'status':{
+                                'kamar_kosong': oc.total_kosong,
+                                'kamar_terisi': oc.total_terisi,
+                                'kamar_total': oc.total_kamar
+                            },
+                            'last_update': oc.last_update
+                        })
+        if len(subresult['kamar']) > 0:
+            result.append(subresult)
+            
+    
+    return jsonify(result)
 
 @app.route('/isolations', methods=['GET'])
 def isolations():
