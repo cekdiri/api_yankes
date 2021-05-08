@@ -89,28 +89,34 @@ db.create_tables([JenisFaskes, Province, RumahSakit, Jenis_Ruang, Kelas_Ruang, C
 #csvWriter.writerow(['satker', 'nama', 'alamat', 'prov', 'jenis_ruang', 'ruang', 'total_kamar', 'total_terisi', 'total_kosong', 'last_update','lat','lng'])
 
 
-faskes_df = pd.read_csv("data/list-faskes-filtered.csv",delimiter=',',encoding='ISO-8859-1')
+faskes_df = pd.read_csv("data/faskes-filtered.csv",delimiter=',',encoding='ISO-8859-1')
 #faskes_df.head()
 browser = webdriver.Chrome(chrome_options=chrome_options)
 
+idprov = 1
 for index, row in faskes_df.iterrows():
     
     satker = str(row['kode_rs'])
     nama_rs = str(row['nama_unit'])
     alamat =  str(row['alamat'])
-    prov =  str(row['nama_prov'])
+    prov =  str(row['prov'])
     lat =  row['lat']
     lon =  row['lng']
     
-    prov  = Province.select().where(Province.prov_id==row['prov_id'])
+    prov  = Province.select().where(Province.nama_prov==row['prov'])
     if prov.count() < 1:
-        prov = Province.create(prov_id=row['prov_id'], nama_prov=row['nama_prov'])
+        prov = Province.create(prov_id=idprov, nama_prov=row['prov'])
+        idprov = idprov + 1
     else:
         prov = prov.get()
 
-    jenis = JenisFaskes.select().where(JenisFaskes.title==row['jenis_faskes'])
+    try:
+        jenisfaskes = row['jenis_faskes']
+    except:
+        jenisfaskes = 'Rumah Sakit'
+    jenis = JenisFaskes.select().where(JenisFaskes.title==jenisfaskes)
     if jenis.count() < 1:
-        jenis =JenisFaskes.create(title=row['jenis_faskes'])
+        jenis =JenisFaskes.create(title=jenisfaskes)
     else:
         jenis = jenis.get()
     rs = RumahSakit.select().where(RumahSakit.kode_rs==row['kode_rs'])

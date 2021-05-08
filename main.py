@@ -84,9 +84,10 @@ kode_rs = []
 with open('data/faskes_rumahsakit.csv', 'r')  as fle:
     csv_reader = csv.DictReader(fle)
     for row in csv_reader:
-        prov  = Province.select().where(Province.prov_id==row['prov_id'])
+        prov  = Province.select().where(Province.nama_prov==row['nama_prov'])
         if prov.count() < 1:
-            prov = Province.create(prov_id=row['prov_id'], nama_prov=row['nama_prov'])
+            prv = Province.select().count()
+            prov = Province.create(prov_id=int(prv + 1), nama_prov=row['nama_prov'])
 
         jenis = JenisFaskes.select().where(JenisFaskes.title==row['jenis_faskes'])
         if jenis.count() < 1:
