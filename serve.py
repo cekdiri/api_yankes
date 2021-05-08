@@ -119,7 +119,8 @@ def okupansi(idprov):
 
 @app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
 def covokupansi(idprov):
-    rumkit = RumahSakit.select().where(RumahSakit.prov_id==idprov)
+    prov = Province.select().where(Province.prov_id=idprov).get()
+    rumkit = RumahSakit.select().where(RumahSakit.prov_id==prov)
     result = []
     for rum in rumkit:
         subresult = {}
