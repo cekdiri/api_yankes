@@ -149,7 +149,7 @@ def covokupansi(idprov):
                 'lon': rum.lon
             }
             subresult['kamar'] = []
-
+        print(subresult)
         occ = CovidOccupations.select().where(CovidOccupations.rumahsakit==rum)
         if occ.count() > 0:
             for oc in occ:
