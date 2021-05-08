@@ -140,7 +140,7 @@ def covokupansi(idprov):
                     if a['nama'] == rum.nama_unit:
                         index = idx
                 if index:
-                    subresult = result[idx]['kamar']
+                    subresult = result[idx]
         else:
             subresult['nama'] = rum.nama_unit
             subresult['alamat'] = {
@@ -149,7 +149,6 @@ def covokupansi(idprov):
                 'lon': rum.lon
             }
             subresult['kamar'] = []
-        print(subresult)
         occ = CovidOccupations.select().where(CovidOccupations.rumahsakit==rum)
         if occ.count() > 0:
             for oc in occ:
