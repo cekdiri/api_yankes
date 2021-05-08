@@ -124,6 +124,7 @@ def covokupansi(idprov):
     result = []
     for rum in rumkit:
         subresult = {}
+        subresult['kamar'] = []
         if len(result) > 0:
             if not rum.nama_unit in [a['nama'] for a in result]:
                 subresult['nama'] = rum.nama_unit
