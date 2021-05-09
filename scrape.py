@@ -89,7 +89,7 @@ db.create_tables([JenisFaskes, Province, RumahSakit, Jenis_Ruang, Kelas_Ruang, C
 #csvWriter.writerow(['satker', 'nama', 'alamat', 'prov', 'jenis_ruang', 'ruang', 'total_kamar', 'total_terisi', 'total_kosong', 'last_update','lat','lng'])
 
 
-faskes_df = pd.read_csv("data/faskes-filtered.csv",delimiter=',',encoding='ISO-8859-1')
+faskes_df = pd.read_csv("data/faskes-new.csv",delimiter=';',encoding='ISO-8859-1')
 #faskes_df.head()
 browser = webdriver.Chrome(chrome_options=chrome_options)
 
