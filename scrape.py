@@ -143,60 +143,66 @@ for index, row in faskes_df.iterrows():
     while(i<=2): 
         #if (satker == '3471052'):
         link = 'http://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs='+satker+'&jenis='+str(i)
-        browser.get(link)
-        #print(r)
-        data = browser.page_source
-        url = soup(data,"lxml")
-        print(str(satker)+'-'+str(i))
-        card = url.find_all('div', attrs={'class':'card h-100'})
-        #print(nama_rs)
-        if card is not None:
-            for col in card:
-                _satker = satker
-                _nama = nama_rs
-                _alamat = alamat
-                _prov = prov
-                _lat = lat
-                _long = lon
-                if (i==1):
-                    _jenis_ruang = 'Tempat Tidur Covid 19'
-                elif (i==2):
-                    _jenis_ruang = 'Tempat Tidur Non Covid 19'
-                _ruang = col.find('h5', attrs={'class':'text-center'}).text
-                #print(str(_ruang))
-                _total_kamar = col.find('div', attrs={'class':'col-4 offset-2 pl-0 pr-0 col-md-4 offset-md-2 border text-center mr-2 pt-1'}).find('h1').text
-                _total_kosong = col.find('div', attrs={'class':'col-4 pl-0 pr-0 col-md-4 border text-center pt-1'}).find('h1').text
-                _total_terisi = int(_total_kamar) - int(_total_kosong)
-                _last_update = col.find('div', attrs={'class':'ml-auto mt-1'}).text
+        try:
+            browser.get(link)
+            #print(r)
+            data = browser.page_source
+            lanjut = True
+        except:
+            data = None 
+            lanjut = False
+        if lanjut:
+            url = soup(data,"lxml")
+            print(str(satker)+'-'+str(i))
+            card = url.find_all('div', attrs={'class':'card h-100'})
+            #print(nama_rs)
+            if card is not None:
+                for col in card:
+                    _satker = satker
+                    _nama = nama_rs
+                    _alamat = alamat
+                    _prov = prov
+                    _lat = lat
+                    _long = lon
+                    if (i==1):
+                        _jenis_ruang = 'Tempat Tidur Covid 19'
+                    elif (i==2):
+                        _jenis_ruang = 'Tempat Tidur Non Covid 19'
+                    _ruang = col.find('h5', attrs={'class':'text-center'}).text
+                    #print(str(_ruang))
+                    _total_kamar = col.find('div', attrs={'class':'col-4 offset-2 pl-0 pr-0 col-md-4 offset-md-2 border text-center mr-2 pt-1'}).find('h1').text
+                    _total_kosong = col.find('div', attrs={'class':'col-4 pl-0 pr-0 col-md-4 border text-center pt-1'}).find('h1').text
+                    _total_terisi = int(_total_kamar) - int(_total_kosong)
+                    _last_update = col.find('div', attrs={'class':'ml-auto mt-1'}).text
 
-                #csvWriter.writerow([_satker, _nama, _alamat, _prov, _jenis_ruang, _ruang, _total_kamar, _total_terisi, _total_kosong, _last_update, _lat, _long])
-                
-                ruang = Jenis_Ruang.select().where(Jenis_Ruang.title==_ruang)
-                if ruang.count() < 1:
-                    ruang = Jenis_Ruang.create(title=_ruang)
-                else:
-                    ruang = ruang.get()
-                kelas = Kelas_Ruang.select().where(Kelas_Ruang.title==_jenis_ruang)
-                if kelas.count() < 1:
-                    kelas = Kelas_Ruang.create(title=_jenis_ruang)
-                else:
-                    kelas = kelas.get()   
-                update = datetime.strptime(_last_update, '%d-%m-%Y %H:%M:%S')
+                    #csvWriter.writerow([_satker, _nama, _alamat, _prov, _jenis_ruang, _ruang, _total_kamar, _total_terisi, _total_kosong, _last_update, _lat, _long])
+                    
+                    ruang = Jenis_Ruang.select().where(Jenis_Ruang.title==_ruang)
+                    if ruang.count() < 1:
+                        ruang = Jenis_Ruang.create(title=_ruang)
+                    else:
+                        ruang = ruang.get()
+                    kelas = Kelas_Ruang.select().where(Kelas_Ruang.title==_jenis_ruang)
+                    if kelas.count() < 1:
+                        kelas = Kelas_Ruang.create(title=_jenis_ruang)
+                    else:
+                        kelas = kelas.get()   
+                    update = datetime.strptime(_last_update, '%d-%m-%Y %H:%M:%S')
 
-                occupation = CovidOccupations.select().where(CovidOccupations.rumahsakit==rs, 
-                    CovidOccupations.jenis_ruang==ruang, CovidOccupations.kelas_ruang==kelas, 
-                    CovidOccupations.last_update==update)
-                if occupation.count() < 1:
-                    occupation = CovidOccupations.create(
-                        rumahsakit=rs,
-                        jenis_ruang=ruang,
-                        kelas_ruang=kelas,
-                        total_kamar = _total_kamar,
-                        total_terisi = _total_terisi,
-                        total_kosong = _total_kosong,                        
-                        last_update = update
-                    )
-                    print('save update '+str(update))
+                    occupation = CovidOccupations.select().where(CovidOccupations.rumahsakit==rs, 
+                        CovidOccupations.jenis_ruang==ruang, CovidOccupations.kelas_ruang==kelas, 
+                        CovidOccupations.last_update==update)
+                    if occupation.count() < 1:
+                        occupation = CovidOccupations.create(
+                            rumahsakit=rs,
+                            jenis_ruang=ruang,
+                            kelas_ruang=kelas,
+                            total_kamar = _total_kamar,
+                            total_terisi = _total_terisi,
+                            total_kosong = _total_kosong,                        
+                            last_update = update
+                        )
+                        print('save update '+str(update))
         i+=1
 browser.stop_client()
 browser.close()
