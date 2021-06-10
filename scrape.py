@@ -12,6 +12,7 @@ import random
 from datetime import datetime, timedelta
 import re
 import os
+import sys
 import peewee as pw
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -28,11 +29,14 @@ chrome_options.add_argument('--disable-gpu')
 
 
 app = Flask(__name__)
-app.config.from_pyfile('settings.cfg')
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+
+app.config.from_pyfile(str(dir_path)+'/settings.cfg')
 
 fmt = "%(levelname)s - %(asctime)s %(filename)s:%(lineno)d %(message)s"
 formatter = logging.Formatter(fmt=fmt)
-log_path = './{}.log'.format(__name__)
+log_path = str(dir_path)+'/{}.log'.format(__name__)
 file_handler = logging.FileHandler(log_path)
 file_handler.setFormatter(formatter)
 
@@ -89,7 +93,7 @@ db.create_tables([JenisFaskes, Province, RumahSakit, Jenis_Ruang, Kelas_Ruang, C
 #csvWriter.writerow(['satker', 'nama', 'alamat', 'prov', 'jenis_ruang', 'ruang', 'total_kamar', 'total_terisi', 'total_kosong', 'last_update','lat','lng'])
 
 
-faskes_df = pd.read_csv("data/faskes-new.csv",delimiter=';',encoding='ISO-8859-1')
+faskes_df = pd.read_csv(str(dir_path)+"/data/faskes-new.csv",delimiter=';',encoding='ISO-8859-1')
 #faskes_df.head()
 browser = webdriver.Chrome(chrome_options=chrome_options)
 
