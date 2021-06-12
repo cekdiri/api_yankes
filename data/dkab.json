@@ -1,0 +1,2126 @@
+{
+    "11prop": [
+        {
+            "kode_kabkota": "1101",
+            "nama_kabkota": "Simeulue"
+        },
+        {
+            "kode_kabkota": "1102",
+            "nama_kabkota": "Aceh Singkil"
+        },
+        {
+            "kode_kabkota": "1103",
+            "nama_kabkota": "Aceh Selatan"
+        },
+        {
+            "kode_kabkota": "1104",
+            "nama_kabkota": "Aceh Tenggara"
+        },
+        {
+            "kode_kabkota": "1105",
+            "nama_kabkota": "Aceh Timur"
+        },
+        {
+            "kode_kabkota": "1106",
+            "nama_kabkota": "Aceh Tengah"
+        },
+        {
+            "kode_kabkota": "1107",
+            "nama_kabkota": "Aceh Barat"
+        },
+        {
+            "kode_kabkota": "1108",
+            "nama_kabkota": "Aceh Besar"
+        },
+        {
+            "kode_kabkota": "1109",
+            "nama_kabkota": "Pidie"
+        },
+        {
+            "kode_kabkota": "1110",
+            "nama_kabkota": "Bireuen"
+        },
+        {
+            "kode_kabkota": "1111",
+            "nama_kabkota": "Aceh Utara"
+        },
+        {
+            "kode_kabkota": "1112",
+            "nama_kabkota": "Aceh Barat Daya"
+        },
+        {
+            "kode_kabkota": "1113",
+            "nama_kabkota": "Gayo Lues"
+        },
+        {
+            "kode_kabkota": "1114",
+            "nama_kabkota": "Aceh Tamiang"
+        },
+        {
+            "kode_kabkota": "1115",
+            "nama_kabkota": "Nagan Raya"
+        },
+        {
+            "kode_kabkota": "1116",
+            "nama_kabkota": "Aceh Jaya"
+        },
+        {
+            "kode_kabkota": "1117",
+            "nama_kabkota": "Bener Meriah"
+        },
+        {
+            "kode_kabkota": "1118",
+            "nama_kabkota": "Pidie Jaya"
+        },
+        {
+            "kode_kabkota": "1171",
+            "nama_kabkota": "Kota Banda Aceh"
+        },
+        {
+            "kode_kabkota": "1172",
+            "nama_kabkota": "Kota Sabang"
+        },
+        {
+            "kode_kabkota": "1173",
+            "nama_kabkota": "Kota Langsa"
+        },
+        {
+            "kode_kabkota": "1174",
+            "nama_kabkota": "Kota Lhokseumawe"
+        },
+        {
+            "kode_kabkota": "1175",
+            "nama_kabkota": "Kota Subulussalam"
+        }
+    ],
+    "12prop": [
+        {
+            "kode_kabkota": "1201",
+            "nama_kabkota": "Nias"
+        },
+        {
+            "kode_kabkota": "1202",
+            "nama_kabkota": "Mandailing Natal"
+        },
+        {
+            "kode_kabkota": "1203",
+            "nama_kabkota": "Tapanuli Selatan"
+        },
+        {
+            "kode_kabkota": "1204",
+            "nama_kabkota": "Tapanuli Tengah"
+        },
+        {
+            "kode_kabkota": "1205",
+            "nama_kabkota": "Tapanuli Utara"
+        },
+        {
+            "kode_kabkota": "1206",
+            "nama_kabkota": "Toba Samosir"
+        },
+        {
+            "kode_kabkota": "1207",
+            "nama_kabkota": "Labuhan Batu"
+        },
+        {
+            "kode_kabkota": "1208",
+            "nama_kabkota": "Asahan"
+        },
+        {
+            "kode_kabkota": "1209",
+            "nama_kabkota": "Simalungun"
+        },
+        {
+            "kode_kabkota": "1210",
+            "nama_kabkota": "Dairi"
+        },
+        {
+            "kode_kabkota": "1211",
+            "nama_kabkota": "Karo"
+        },
+        {
+            "kode_kabkota": "1212",
+            "nama_kabkota": "Deli Serdang"
+        },
+        {
+            "kode_kabkota": "1213",
+            "nama_kabkota": "Langkat"
+        },
+        {
+            "kode_kabkota": "1214",
+            "nama_kabkota": "Nias Selatan"
+        },
+        {
+            "kode_kabkota": "1215",
+            "nama_kabkota": "Humbang Hasundutan"
+        },
+        {
+            "kode_kabkota": "1216",
+            "nama_kabkota": "Pakpak Bharat"
+        },
+        {
+            "kode_kabkota": "1217",
+            "nama_kabkota": "Samosir"
+        },
+        {
+            "kode_kabkota": "1218",
+            "nama_kabkota": "Serdang Bedagai"
+        },
+        {
+            "kode_kabkota": "1219",
+            "nama_kabkota": "Batu Bara"
+        },
+        {
+            "kode_kabkota": "1220",
+            "nama_kabkota": "Padang Lawas Utara"
+        },
+        {
+            "kode_kabkota": "1221",
+            "nama_kabkota": "Padang Lawas"
+        },
+        {
+            "kode_kabkota": "1222",
+            "nama_kabkota": "Labuhan Batu Selatan"
+        },
+        {
+            "kode_kabkota": "1223",
+            "nama_kabkota": "Labuhan Batu Utara"
+        },
+        {
+            "kode_kabkota": "1224",
+            "nama_kabkota": "Nias Utara"
+        },
+        {
+            "kode_kabkota": "1225",
+            "nama_kabkota": "Nias Barat"
+        },
+        {
+            "kode_kabkota": "1271",
+            "nama_kabkota": "Kota Sibolga"
+        },
+        {
+            "kode_kabkota": "1272",
+            "nama_kabkota": "Kota Tanjung Balai"
+        },
+        {
+            "kode_kabkota": "1273",
+            "nama_kabkota": "Kota Pematang Siantar"
+        },
+        {
+            "kode_kabkota": "1274",
+            "nama_kabkota": "Kota Tebing Tinggi"
+        },
+        {
+            "kode_kabkota": "1275",
+            "nama_kabkota": "Kota Medan"
+        },
+        {
+            "kode_kabkota": "1276",
+            "nama_kabkota": "Kota Binjai"
+        },
+        {
+            "kode_kabkota": "1277",
+            "nama_kabkota": "Kota Padang Sidempuan"
+        },
+        {
+            "kode_kabkota": "1278",
+            "nama_kabkota": "Kota Gunungsitoli"
+        }
+    ],
+    "13prop": [
+        {
+            "kode_kabkota": "1301",
+            "nama_kabkota": "Kepulauan Mentawai"
+        },
+        {
+            "kode_kabkota": "1302",
+            "nama_kabkota": "Pesisir Selatan"
+        },
+        {
+            "kode_kabkota": "1303",
+            "nama_kabkota": "Solok"
+        },
+        {
+            "kode_kabkota": "1304",
+            "nama_kabkota": "Sijunjung"
+        },
+        {
+            "kode_kabkota": "1305",
+            "nama_kabkota": "Tanah Datar"
+        },
+        {
+            "kode_kabkota": "1306",
+            "nama_kabkota": "Padang Pariaman"
+        },
+        {
+            "kode_kabkota": "1307",
+            "nama_kabkota": "Agam"
+        },
+        {
+            "kode_kabkota": "1308",
+            "nama_kabkota": "Lima Puluh Kota"
+        },
+        {
+            "kode_kabkota": "1309",
+            "nama_kabkota": "Pasaman"
+        },
+        {
+            "kode_kabkota": "1310",
+            "nama_kabkota": "Solok Selatan"
+        },
+        {
+            "kode_kabkota": "1311",
+            "nama_kabkota": "Dharmasraya"
+        },
+        {
+            "kode_kabkota": "1312",
+            "nama_kabkota": "Pasaman Barat"
+        },
+        {
+            "kode_kabkota": "1371",
+            "nama_kabkota": "Kota Padang"
+        },
+        {
+            "kode_kabkota": "1372",
+            "nama_kabkota": "Kota Solok"
+        },
+        {
+            "kode_kabkota": "1373",
+            "nama_kabkota": "Kota Sawah Lunto"
+        },
+        {
+            "kode_kabkota": "1374",
+            "nama_kabkota": "Kota Padang Panjang"
+        },
+        {
+            "kode_kabkota": "1375",
+            "nama_kabkota": "Kota Bukittinggi"
+        },
+        {
+            "kode_kabkota": "1376",
+            "nama_kabkota": "Kota Payakumbuh"
+        },
+        {
+            "kode_kabkota": "1377",
+            "nama_kabkota": "Kota Pariaman"
+        }
+    ],
+    "14prop": [
+        {
+            "kode_kabkota": "1401",
+            "nama_kabkota": "Kuantan Singingi"
+        },
+        {
+            "kode_kabkota": "1402",
+            "nama_kabkota": "Indragiri Hulu"
+        },
+        {
+            "kode_kabkota": "1403",
+            "nama_kabkota": "Indragiri Hilir"
+        },
+        {
+            "kode_kabkota": "1404",
+            "nama_kabkota": "Pelalawan"
+        },
+        {
+            "kode_kabkota": "1405",
+            "nama_kabkota": "Siak"
+        },
+        {
+            "kode_kabkota": "1406",
+            "nama_kabkota": "Kampar"
+        },
+        {
+            "kode_kabkota": "1407",
+            "nama_kabkota": "Rokan Hulu"
+        },
+        {
+            "kode_kabkota": "1408",
+            "nama_kabkota": "Bengkalis"
+        },
+        {
+            "kode_kabkota": "1409",
+            "nama_kabkota": "Rokan Hilir"
+        },
+        {
+            "kode_kabkota": "1410",
+            "nama_kabkota": "Kepulauan Meranti"
+        },
+        {
+            "kode_kabkota": "1471",
+            "nama_kabkota": "Kota Pekanbaru"
+        },
+        {
+            "kode_kabkota": "1473",
+            "nama_kabkota": "Kota Dumai"
+        }
+    ],
+    "15prop": [
+        {
+            "kode_kabkota": "1501",
+            "nama_kabkota": "Kerinci"
+        },
+        {
+            "kode_kabkota": "1502",
+            "nama_kabkota": "Merangin"
+        },
+        {
+            "kode_kabkota": "1503",
+            "nama_kabkota": "Sarolangun"
+        },
+        {
+            "kode_kabkota": "1504",
+            "nama_kabkota": "Batang Hari"
+        },
+        {
+            "kode_kabkota": "1505",
+            "nama_kabkota": "Muaro Jambi"
+        },
+        {
+            "kode_kabkota": "1506",
+            "nama_kabkota": "Tanjung Jabung Timur"
+        },
+        {
+            "kode_kabkota": "1507",
+            "nama_kabkota": "Tanjung Jabung Barat"
+        },
+        {
+            "kode_kabkota": "1508",
+            "nama_kabkota": "Tebo"
+        },
+        {
+            "kode_kabkota": "1509",
+            "nama_kabkota": "Bungo"
+        },
+        {
+            "kode_kabkota": "1571",
+            "nama_kabkota": "Kota Jambi"
+        },
+        {
+            "kode_kabkota": "1572",
+            "nama_kabkota": "Kota Sungai penuh"
+        }
+    ],
+    "16prop": [
+        {
+            "kode_kabkota": "1601",
+            "nama_kabkota": "Ogan Komering Ulu"
+        },
+        {
+            "kode_kabkota": "1602",
+            "nama_kabkota": "Ogan Komering Ilir"
+        },
+        {
+            "kode_kabkota": "1603",
+            "nama_kabkota": "Muara Enim"
+        },
+        {
+            "kode_kabkota": "1604",
+            "nama_kabkota": "Lahat"
+        },
+        {
+            "kode_kabkota": "1605",
+            "nama_kabkota": "Musi Rawas"
+        },
+        {
+            "kode_kabkota": "1606",
+            "nama_kabkota": "Musi Banyuasin"
+        },
+        {
+            "kode_kabkota": "1607",
+            "nama_kabkota": "Banyuasin"
+        },
+        {
+            "kode_kabkota": "1608",
+            "nama_kabkota": "Ogan Komering Ulu Selatan"
+        },
+        {
+            "kode_kabkota": "1609",
+            "nama_kabkota": "Ogan Komering Ulu Timur"
+        },
+        {
+            "kode_kabkota": "1610",
+            "nama_kabkota": "Ogan Ilir"
+        },
+        {
+            "kode_kabkota": "1611",
+            "nama_kabkota": "Empat Lawang"
+        },
+        {
+            "kode_kabkota": "1612",
+            "nama_kabkota": "Penukal Abab Lematang Ilir "
+        },
+        {
+            "kode_kabkota": "1613",
+            "nama_kabkota": "Musi Rawas Utara"
+        },
+        {
+            "kode_kabkota": "1671",
+            "nama_kabkota": "Kota Palembang"
+        },
+        {
+            "kode_kabkota": "1672",
+            "nama_kabkota": "Kota Prabumulih"
+        },
+        {
+            "kode_kabkota": "1673",
+            "nama_kabkota": "Kota Pagar Alam"
+        },
+        {
+            "kode_kabkota": "1674",
+            "nama_kabkota": "Kota Lubuk Linggau"
+        }
+    ],
+    "17prop": [
+        {
+            "kode_kabkota": "1701",
+            "nama_kabkota": "Bengkulu Selatan"
+        },
+        {
+            "kode_kabkota": "1702",
+            "nama_kabkota": "Rejang Lebong"
+        },
+        {
+            "kode_kabkota": "1703",
+            "nama_kabkota": "Bengkulu Utara"
+        },
+        {
+            "kode_kabkota": "1704",
+            "nama_kabkota": "Kaur"
+        },
+        {
+            "kode_kabkota": "1705",
+            "nama_kabkota": "Seluma"
+        },
+        {
+            "kode_kabkota": "1706",
+            "nama_kabkota": "Muko Muko"
+        },
+        {
+            "kode_kabkota": "1707",
+            "nama_kabkota": "Lebong"
+        },
+        {
+            "kode_kabkota": "1708",
+            "nama_kabkota": "Kepahiang"
+        },
+        {
+            "kode_kabkota": "1709",
+            "nama_kabkota": "Bengkulu Tengah"
+        },
+        {
+            "kode_kabkota": "1771",
+            "nama_kabkota": "Kota Bengkulu"
+        }
+    ],
+    "18prop": [
+        {
+            "kode_kabkota": "1801",
+            "nama_kabkota": "Lampung Barat"
+        },
+        {
+            "kode_kabkota": "1802",
+            "nama_kabkota": "Tanggamus"
+        },
+        {
+            "kode_kabkota": "1803",
+            "nama_kabkota": "Lampung Selatan"
+        },
+        {
+            "kode_kabkota": "1804",
+            "nama_kabkota": "Lampung Timur"
+        },
+        {
+            "kode_kabkota": "1805",
+            "nama_kabkota": "Lampung Tengah"
+        },
+        {
+            "kode_kabkota": "1806",
+            "nama_kabkota": "Lampung Utara"
+        },
+        {
+            "kode_kabkota": "1807",
+            "nama_kabkota": "Way Kanan"
+        },
+        {
+            "kode_kabkota": "1808",
+            "nama_kabkota": "Tulang Bawang"
+        },
+        {
+            "kode_kabkota": "1809",
+            "nama_kabkota": "Pesawaran"
+        },
+        {
+            "kode_kabkota": "1810",
+            "nama_kabkota": "Pringsewu"
+        },
+        {
+            "kode_kabkota": "1811",
+            "nama_kabkota": "Mesuji"
+        },
+        {
+            "kode_kabkota": "1812",
+            "nama_kabkota": "Tulang Bawang Barat"
+        },
+        {
+            "kode_kabkota": "1813",
+            "nama_kabkota": "Pesisir Barat"
+        },
+        {
+            "kode_kabkota": "1871",
+            "nama_kabkota": "Kota Bandar Lampung"
+        },
+        {
+            "kode_kabkota": "1872",
+            "nama_kabkota": "Kota Metro"
+        }
+    ],
+    "19prop": [
+        {
+            "kode_kabkota": "1901",
+            "nama_kabkota": "Bangka"
+        },
+        {
+            "kode_kabkota": "1902",
+            "nama_kabkota": "Belitung"
+        },
+        {
+            "kode_kabkota": "1903",
+            "nama_kabkota": "Bangka Barat"
+        },
+        {
+            "kode_kabkota": "1904",
+            "nama_kabkota": "Bangka Tengah"
+        },
+        {
+            "kode_kabkota": "1905",
+            "nama_kabkota": "Bangka Selatan"
+        },
+        {
+            "kode_kabkota": "1906",
+            "nama_kabkota": "Belitung Timur"
+        },
+        {
+            "kode_kabkota": "1971",
+            "nama_kabkota": "Kota Pangkal Pinang"
+        }
+    ],
+    "20prop": [
+        {
+            "kode_kabkota": "2101",
+            "nama_kabkota": "Karimun"
+        },
+        {
+            "kode_kabkota": "2102",
+            "nama_kabkota": "Bintan"
+        },
+        {
+            "kode_kabkota": "2103",
+            "nama_kabkota": "Natuna"
+        },
+        {
+            "kode_kabkota": "2104",
+            "nama_kabkota": "Lingga"
+        },
+        {
+            "kode_kabkota": "2105",
+            "nama_kabkota": "Kepulauan Anambas"
+        },
+        {
+            "kode_kabkota": "2171",
+            "nama_kabkota": "Kota Batam"
+        },
+        {
+            "kode_kabkota": "2172",
+            "nama_kabkota": "Kota Tanjung Pinang"
+        }
+    ],
+    "31prop": [
+        {
+            "kode_kabkota": "3101",
+            "nama_kabkota": "Kepulauan Seribu"
+        },
+        {
+            "kode_kabkota": "3171",
+            "nama_kabkota": "Kota Jakarta Selatan"
+        },
+        {
+            "kode_kabkota": "3172",
+            "nama_kabkota": "Kota Jakarta Timur"
+        },
+        {
+            "kode_kabkota": "3173",
+            "nama_kabkota": "Kota Jakarta Pusat"
+        },
+        {
+            "kode_kabkota": "3174",
+            "nama_kabkota": "Kota Jakarta Barat"
+        },
+        {
+            "kode_kabkota": "3175",
+            "nama_kabkota": "Kota Jakarta Utara"
+        }
+    ],
+    "32prop": [
+        {
+            "kode_kabkota": "3201",
+            "nama_kabkota": "Bogor"
+        },
+        {
+            "kode_kabkota": "3202",
+            "nama_kabkota": "Sukabumi"
+        },
+        {
+            "kode_kabkota": "3203",
+            "nama_kabkota": "Cianjur"
+        },
+        {
+            "kode_kabkota": "3204",
+            "nama_kabkota": "Bandung"
+        },
+        {
+            "kode_kabkota": "3205",
+            "nama_kabkota": "Garut"
+        },
+        {
+            "kode_kabkota": "3206",
+            "nama_kabkota": "Tasikmalaya"
+        },
+        {
+            "kode_kabkota": "3207",
+            "nama_kabkota": "Ciamis"
+        },
+        {
+            "kode_kabkota": "3208",
+            "nama_kabkota": "Kuningan"
+        },
+        {
+            "kode_kabkota": "3209",
+            "nama_kabkota": "Cirebon"
+        },
+        {
+            "kode_kabkota": "3210",
+            "nama_kabkota": "Majalengka"
+        },
+        {
+            "kode_kabkota": "3211",
+            "nama_kabkota": "Sumedang"
+        },
+        {
+            "kode_kabkota": "3212",
+            "nama_kabkota": "Indramayu"
+        },
+        {
+            "kode_kabkota": "3213",
+            "nama_kabkota": "Subang"
+        },
+        {
+            "kode_kabkota": "3214",
+            "nama_kabkota": "Purwakarta"
+        },
+        {
+            "kode_kabkota": "3215",
+            "nama_kabkota": "Karawang"
+        },
+        {
+            "kode_kabkota": "3216",
+            "nama_kabkota": "Bekasi"
+        },
+        {
+            "kode_kabkota": "3217",
+            "nama_kabkota": "Bandung Barat"
+        },
+        {
+            "kode_kabkota": "3218",
+            "nama_kabkota": "Pangandaran"
+        },
+        {
+            "kode_kabkota": "3271",
+            "nama_kabkota": "Kota Bogor"
+        },
+        {
+            "kode_kabkota": "3272",
+            "nama_kabkota": "Kota Sukabumi"
+        },
+        {
+            "kode_kabkota": "3273",
+            "nama_kabkota": "Kota Bandung"
+        },
+        {
+            "kode_kabkota": "3274",
+            "nama_kabkota": "Kota Cirebon"
+        },
+        {
+            "kode_kabkota": "3275",
+            "nama_kabkota": "Kota Bekasi"
+        },
+        {
+            "kode_kabkota": "3276",
+            "nama_kabkota": "Kota Depok"
+        },
+        {
+            "kode_kabkota": "3277",
+            "nama_kabkota": "Kota Cimahi"
+        },
+        {
+            "kode_kabkota": "3278",
+            "nama_kabkota": "Kota Tasikmalaya"
+        },
+        {
+            "kode_kabkota": "3279",
+            "nama_kabkota": "Kota Banjar"
+        }
+    ],
+    "33prop": [
+        {
+            "kode_kabkota": "3301",
+            "nama_kabkota": "Cilacap"
+        },
+        {
+            "kode_kabkota": "3302",
+            "nama_kabkota": "Banyumas"
+        },
+        {
+            "kode_kabkota": "3303",
+            "nama_kabkota": "Purbalingga"
+        },
+        {
+            "kode_kabkota": "3304",
+            "nama_kabkota": "Banjarnegara"
+        },
+        {
+            "kode_kabkota": "3305",
+            "nama_kabkota": "Kebumen"
+        },
+        {
+            "kode_kabkota": "3306",
+            "nama_kabkota": "Purworejo"
+        },
+        {
+            "kode_kabkota": "3307",
+            "nama_kabkota": " Wonosobo"
+        },
+        {
+            "kode_kabkota": "3308",
+            "nama_kabkota": "Magelang"
+        },
+        {
+            "kode_kabkota": "3309",
+            "nama_kabkota": "Boyolali"
+        },
+        {
+            "kode_kabkota": "3310",
+            "nama_kabkota": "Klaten"
+        },
+        {
+            "kode_kabkota": "3311",
+            "nama_kabkota": "Sukoharjo"
+        },
+        {
+            "kode_kabkota": "3312",
+            "nama_kabkota": "Wonogiri"
+        },
+        {
+            "kode_kabkota": "3313",
+            "nama_kabkota": "Karanganyar"
+        },
+        {
+            "kode_kabkota": "3314",
+            "nama_kabkota": "Sragen"
+        },
+        {
+            "kode_kabkota": "3315",
+            "nama_kabkota": "Grobogan"
+        },
+        {
+            "kode_kabkota": "3316",
+            "nama_kabkota": "Blora"
+        },
+        {
+            "kode_kabkota": "3317",
+            "nama_kabkota": "Rembang"
+        },
+        {
+            "kode_kabkota": "3318",
+            "nama_kabkota": "Pati"
+        },
+        {
+            "kode_kabkota": "3319",
+            "nama_kabkota": "Kudus"
+        },
+        {
+            "kode_kabkota": "3320",
+            "nama_kabkota": "Jepara"
+        },
+        {
+            "kode_kabkota": "3321",
+            "nama_kabkota": "Demak"
+        },
+        {
+            "kode_kabkota": "3322",
+            "nama_kabkota": "Semarang"
+        },
+        {
+            "kode_kabkota": "3323",
+            "nama_kabkota": "Temanggung"
+        },
+        {
+            "kode_kabkota": "3324",
+            "nama_kabkota": "Kendal"
+        },
+        {
+            "kode_kabkota": "3325",
+            "nama_kabkota": "Batang"
+        },
+        {
+            "kode_kabkota": "3326",
+            "nama_kabkota": "Pekalongan"
+        },
+        {
+            "kode_kabkota": "3327",
+            "nama_kabkota": "Pemalang"
+        },
+        {
+            "kode_kabkota": "3328",
+            "nama_kabkota": "Tegal"
+        },
+        {
+            "kode_kabkota": "3329",
+            "nama_kabkota": "Brebes"
+        },
+        {
+            "kode_kabkota": "3371",
+            "nama_kabkota": "Kota Magelang"
+        },
+        {
+            "kode_kabkota": "3372",
+            "nama_kabkota": "Kota Surakarta"
+        },
+        {
+            "kode_kabkota": "3373",
+            "nama_kabkota": "Kota Salatiga"
+        },
+        {
+            "kode_kabkota": "3374",
+            "nama_kabkota": "Kota Semarang"
+        },
+        {
+            "kode_kabkota": "3375",
+            "nama_kabkota": "Kota Pekalongan"
+        },
+        {
+            "kode_kabkota": "3376",
+            "nama_kabkota": "Kota Tegal"
+        }
+    ],
+    "34prop": [
+        {
+            "kode_kabkota": "3401",
+            "nama_kabkota": "Kulon Progo"
+        },
+        {
+            "kode_kabkota": "3402",
+            "nama_kabkota": "Bantul"
+        },
+        {
+            "kode_kabkota": "3403",
+            "nama_kabkota": "Gunung Kidul"
+        },
+        {
+            "kode_kabkota": "3404",
+            "nama_kabkota": "Sleman"
+        },
+        {
+            "kode_kabkota": "3471",
+            "nama_kabkota": "Kota Yogyakarta"
+        }
+    ],
+    "35prop": [
+        {
+            "kode_kabkota": "3501",
+            "nama_kabkota": "Pacitan"
+        },
+        {
+            "kode_kabkota": "3502",
+            "nama_kabkota": "Ponorogo"
+        },
+        {
+            "kode_kabkota": "3503",
+            "nama_kabkota": "Trenggalek"
+        },
+        {
+            "kode_kabkota": "3504",
+            "nama_kabkota": "Tulungagung"
+        },
+        {
+            "kode_kabkota": "3505",
+            "nama_kabkota": "Blitar"
+        },
+        {
+            "kode_kabkota": "3506",
+            "nama_kabkota": "Kediri"
+        },
+        {
+            "kode_kabkota": "3507",
+            "nama_kabkota": "Malang"
+        },
+        {
+            "kode_kabkota": "3508",
+            "nama_kabkota": "Lumajang"
+        },
+        {
+            "kode_kabkota": "3509",
+            "nama_kabkota": "Jember"
+        },
+        {
+            "kode_kabkota": "3510",
+            "nama_kabkota": "Banyuwangi"
+        },
+        {
+            "kode_kabkota": "3511",
+            "nama_kabkota": "Bondowoso"
+        },
+        {
+            "kode_kabkota": "3512",
+            "nama_kabkota": "Situbondo"
+        },
+        {
+            "kode_kabkota": "3513",
+            "nama_kabkota": "Probolinggo"
+        },
+        {
+            "kode_kabkota": "3514",
+            "nama_kabkota": "Pasuruan"
+        },
+        {
+            "kode_kabkota": "3515",
+            "nama_kabkota": "Sidoarjo"
+        },
+        {
+            "kode_kabkota": "3516",
+            "nama_kabkota": "Mojokerto"
+        },
+        {
+            "kode_kabkota": "3517",
+            "nama_kabkota": "Jombang"
+        },
+        {
+            "kode_kabkota": "3518",
+            "nama_kabkota": "Nganjuk"
+        },
+        {
+            "kode_kabkota": "3519",
+            "nama_kabkota": "Madiun"
+        },
+        {
+            "kode_kabkota": "3520",
+            "nama_kabkota": "Magetan"
+        },
+        {
+            "kode_kabkota": "3521",
+            "nama_kabkota": "Ngawi"
+        },
+        {
+            "kode_kabkota": "3522",
+            "nama_kabkota": "Bojonegoro"
+        },
+        {
+            "kode_kabkota": "3523",
+            "nama_kabkota": "Tuban"
+        },
+        {
+            "kode_kabkota": "3524",
+            "nama_kabkota": "Lamongan"
+        },
+        {
+            "kode_kabkota": "3525",
+            "nama_kabkota": "Gresik"
+        },
+        {
+            "kode_kabkota": "3526",
+            "nama_kabkota": "Bangkalan"
+        },
+        {
+            "kode_kabkota": "3527",
+            "nama_kabkota": "Sampang"
+        },
+        {
+            "kode_kabkota": "3528",
+            "nama_kabkota": "Pamekasan"
+        },
+        {
+            "kode_kabkota": "3529",
+            "nama_kabkota": "Sumenep"
+        },
+        {
+            "kode_kabkota": "3571",
+            "nama_kabkota": "Kota Kediri"
+        },
+        {
+            "kode_kabkota": "3572",
+            "nama_kabkota": "Kota Blitar"
+        },
+        {
+            "kode_kabkota": "3573",
+            "nama_kabkota": "Kota Malang"
+        },
+        {
+            "kode_kabkota": "3574",
+            "nama_kabkota": "Kota Probolinggo"
+        },
+        {
+            "kode_kabkota": "3575",
+            "nama_kabkota": "Kota Pasuruan"
+        },
+        {
+            "kode_kabkota": "3576",
+            "nama_kabkota": "Kota Mojokerto"
+        },
+        {
+            "kode_kabkota": "3577",
+            "nama_kabkota": "Kota Madiun"
+        },
+        {
+            "kode_kabkota": "3578",
+            "nama_kabkota": "Kota Surabaya"
+        },
+        {
+            "kode_kabkota": "3579",
+            "nama_kabkota": "Kota Batu"
+        }
+    ],
+    "36prop": [
+        {
+            "kode_kabkota": "3601",
+            "nama_kabkota": "Pandeglang"
+        },
+        {
+            "kode_kabkota": "3602",
+            "nama_kabkota": "Lebak"
+        },
+        {
+            "kode_kabkota": "3603",
+            "nama_kabkota": "Tangerang"
+        },
+        {
+            "kode_kabkota": "3604",
+            "nama_kabkota": "Serang"
+        },
+        {
+            "kode_kabkota": "3671",
+            "nama_kabkota": "Kota Tangerang"
+        },
+        {
+            "kode_kabkota": "3672",
+            "nama_kabkota": "Kota Cilegon"
+        },
+        {
+            "kode_kabkota": "3673",
+            "nama_kabkota": "Kota Serang"
+        },
+        {
+            "kode_kabkota": "3674",
+            "nama_kabkota": "Kota Tangerang Selatan"
+        }
+    ],
+    "51prop": [
+        {
+            "kode_kabkota": "5101",
+            "nama_kabkota": "Jembrana"
+        },
+        {
+            "kode_kabkota": "5102",
+            "nama_kabkota": "Tabanan"
+        },
+        {
+            "kode_kabkota": "5103",
+            "nama_kabkota": "Badung"
+        },
+        {
+            "kode_kabkota": "5104",
+            "nama_kabkota": "Gianyar"
+        },
+        {
+            "kode_kabkota": "5105",
+            "nama_kabkota": "Klungkung"
+        },
+        {
+            "kode_kabkota": "5106",
+            "nama_kabkota": "Bangli"
+        },
+        {
+            "kode_kabkota": "5107",
+            "nama_kabkota": "Karangasem"
+        },
+        {
+            "kode_kabkota": "5108",
+            "nama_kabkota": "Buleleng"
+        },
+        {
+            "kode_kabkota": "5171",
+            "nama_kabkota": "Kota Denpasar"
+        }
+    ],
+    "52prop": [
+        {
+            "kode_kabkota": "5201",
+            "nama_kabkota": "Lombok Barat"
+        },
+        {
+            "kode_kabkota": "5202",
+            "nama_kabkota": "Lombok Tengah"
+        },
+        {
+            "kode_kabkota": "5203",
+            "nama_kabkota": "Lombok Timur"
+        },
+        {
+            "kode_kabkota": "5204",
+            "nama_kabkota": "Sumbawa"
+        },
+        {
+            "kode_kabkota": "5205",
+            "nama_kabkota": "Dompu"
+        },
+        {
+            "kode_kabkota": "5206",
+            "nama_kabkota": "Bima"
+        },
+        {
+            "kode_kabkota": "5207",
+            "nama_kabkota": "Sumbawa Barat"
+        },
+        {
+            "kode_kabkota": "5208",
+            "nama_kabkota": "Lombok Utara"
+        },
+        {
+            "kode_kabkota": "5271",
+            "nama_kabkota": "Kota Mataram"
+        },
+        {
+            "kode_kabkota": "5272",
+            "nama_kabkota": "Kota Bima"
+        }
+    ],
+    "53prop": [
+        {
+            "kode_kabkota": "5301",
+            "nama_kabkota": "Sumba Barat"
+        },
+        {
+            "kode_kabkota": "5302",
+            "nama_kabkota": "Sumba Timur"
+        },
+        {
+            "kode_kabkota": "5303",
+            "nama_kabkota": "Kupang"
+        },
+        {
+            "kode_kabkota": "5304",
+            "nama_kabkota": "Timor Tengah Selatan"
+        },
+        {
+            "kode_kabkota": "5305",
+            "nama_kabkota": "Timor Tengah Utara"
+        },
+        {
+            "kode_kabkota": "5306",
+            "nama_kabkota": "Belu"
+        },
+        {
+            "kode_kabkota": "5307",
+            "nama_kabkota": "Alor"
+        },
+        {
+            "kode_kabkota": "5308",
+            "nama_kabkota": "Lembata"
+        },
+        {
+            "kode_kabkota": "5309",
+            "nama_kabkota": "Flores Timur"
+        },
+        {
+            "kode_kabkota": "5310",
+            "nama_kabkota": "Sikka"
+        },
+        {
+            "kode_kabkota": "5311",
+            "nama_kabkota": "Ende"
+        },
+        {
+            "kode_kabkota": "5312",
+            "nama_kabkota": "Ngada"
+        },
+        {
+            "kode_kabkota": "5313",
+            "nama_kabkota": "Manggarai"
+        },
+        {
+            "kode_kabkota": "5314",
+            "nama_kabkota": "Rote Ndao"
+        },
+        {
+            "kode_kabkota": "5315",
+            "nama_kabkota": "Manggarai Barat"
+        },
+        {
+            "kode_kabkota": "5316",
+            "nama_kabkota": "Sumba Tengah"
+        },
+        {
+            "kode_kabkota": "5317",
+            "nama_kabkota": "Sumba Barat Daya"
+        },
+        {
+            "kode_kabkota": "5318",
+            "nama_kabkota": "Nagekeo"
+        },
+        {
+            "kode_kabkota": "5319",
+            "nama_kabkota": "Manggarai Timur"
+        },
+        {
+            "kode_kabkota": "5320",
+            "nama_kabkota": "Sabu Raijua"
+        },
+        {
+            "kode_kabkota": "5321",
+            "nama_kabkota": "Malaka"
+        },
+        {
+            "kode_kabkota": "5371",
+            "nama_kabkota": "Kota Kupang"
+        }
+    ],
+    "61prop": [
+        {
+            "kode_kabkota": "6101",
+            "nama_kabkota": "Sambas"
+        },
+        {
+            "kode_kabkota": "6102",
+            "nama_kabkota": "Bengkayang"
+        },
+        {
+            "kode_kabkota": "6103",
+            "nama_kabkota": "Landak"
+        },
+        {
+            "kode_kabkota": "6104",
+            "nama_kabkota": "Mempawah"
+        },
+        {
+            "kode_kabkota": "6105",
+            "nama_kabkota": "Sanggau"
+        },
+        {
+            "kode_kabkota": "6106",
+            "nama_kabkota": "Ketapang"
+        },
+        {
+            "kode_kabkota": "6107",
+            "nama_kabkota": "Sintang"
+        },
+        {
+            "kode_kabkota": "6108",
+            "nama_kabkota": "Kapuas Hulu"
+        },
+        {
+            "kode_kabkota": "6109",
+            "nama_kabkota": "Sekadau"
+        },
+        {
+            "kode_kabkota": "6110",
+            "nama_kabkota": "Melawi"
+        },
+        {
+            "kode_kabkota": "6111",
+            "nama_kabkota": "Kayong Utara"
+        },
+        {
+            "kode_kabkota": "6112",
+            "nama_kabkota": "Kubu Raya"
+        },
+        {
+            "kode_kabkota": "6171",
+            "nama_kabkota": "Kota Pontianak"
+        },
+        {
+            "kode_kabkota": "6172",
+            "nama_kabkota": "Kota Singkawang"
+        }
+    ],
+    "62prop": [
+        {
+            "kode_kabkota": "6201",
+            "nama_kabkota": "Kotawaringin Barat"
+        },
+        {
+            "kode_kabkota": "6202",
+            "nama_kabkota": "Kotawaringin Timur"
+        },
+        {
+            "kode_kabkota": "6203",
+            "nama_kabkota": "Kapuas"
+        },
+        {
+            "kode_kabkota": "6204",
+            "nama_kabkota": "Barito Selatan"
+        },
+        {
+            "kode_kabkota": "6205",
+            "nama_kabkota": "Barito Utara"
+        },
+        {
+            "kode_kabkota": "6206",
+            "nama_kabkota": "Sukamara"
+        },
+        {
+            "kode_kabkota": "6207",
+            "nama_kabkota": "Lamandau"
+        },
+        {
+            "kode_kabkota": "6208",
+            "nama_kabkota": "Seruyan"
+        },
+        {
+            "kode_kabkota": "6209",
+            "nama_kabkota": "Katingan"
+        },
+        {
+            "kode_kabkota": "6210",
+            "nama_kabkota": "Pulang Pisau"
+        },
+        {
+            "kode_kabkota": "6211",
+            "nama_kabkota": "Gunung Mas"
+        },
+        {
+            "kode_kabkota": "6212",
+            "nama_kabkota": "Barito Timur"
+        },
+        {
+            "kode_kabkota": "6213",
+            "nama_kabkota": "Murung Raya"
+        },
+        {
+            "kode_kabkota": "6271",
+            "nama_kabkota": "Kota Palangka Raya"
+        }
+    ],
+    "63prop": [
+        {
+            "kode_kabkota": "6301",
+            "nama_kabkota": "Tanah Laut"
+        },
+        {
+            "kode_kabkota": "6302",
+            "nama_kabkota": "Kota baru"
+        },
+        {
+            "kode_kabkota": "6303",
+            "nama_kabkota": "Banjar"
+        },
+        {
+            "kode_kabkota": "6304",
+            "nama_kabkota": "Barito Kuala"
+        },
+        {
+            "kode_kabkota": "6305",
+            "nama_kabkota": "Tapin"
+        },
+        {
+            "kode_kabkota": "6306",
+            "nama_kabkota": "Hulu Sungai Selatan"
+        },
+        {
+            "kode_kabkota": "6307",
+            "nama_kabkota": "Hulu Sungai Tengah"
+        },
+        {
+            "kode_kabkota": "6308",
+            "nama_kabkota": "Hulu Sungai Utara"
+        },
+        {
+            "kode_kabkota": "6309",
+            "nama_kabkota": "Tabalong"
+        },
+        {
+            "kode_kabkota": "6310",
+            "nama_kabkota": "Tanah Bumbu"
+        },
+        {
+            "kode_kabkota": "6311",
+            "nama_kabkota": "Balangan"
+        },
+        {
+            "kode_kabkota": "6371",
+            "nama_kabkota": "Kota Banjarmasin"
+        },
+        {
+            "kode_kabkota": "6372",
+            "nama_kabkota": "Kota Banjar baru"
+        }
+    ],
+    "64prop": [
+        {
+            "kode_kabkota": "6401",
+            "nama_kabkota": "Paser"
+        },
+        {
+            "kode_kabkota": "6402",
+            "nama_kabkota": "Kutai Barat"
+        },
+        {
+            "kode_kabkota": "6403",
+            "nama_kabkota": "Kutai Kartanegara"
+        },
+        {
+            "kode_kabkota": "6404",
+            "nama_kabkota": "Kutai Timur"
+        },
+        {
+            "kode_kabkota": "6405",
+            "nama_kabkota": "Berau"
+        },
+        {
+            "kode_kabkota": "6409",
+            "nama_kabkota": "Penajam Paser Utara"
+        },
+        {
+            "kode_kabkota": "6411",
+            "nama_kabkota": "Mahakam Hulu"
+        },
+        {
+            "kode_kabkota": "6471",
+            "nama_kabkota": "Kota Balikpapan"
+        },
+        {
+            "kode_kabkota": "6472",
+            "nama_kabkota": "Kota Samarinda"
+        },
+        {
+            "kode_kabkota": "6474",
+            "nama_kabkota": "Kota Bontang"
+        }
+    ],
+    "65prop": [
+        {
+            "kode_kabkota": "6501",
+            "nama_kabkota": "Malinau"
+        },
+        {
+            "kode_kabkota": "6502",
+            "nama_kabkota": "Bulungan"
+        },
+        {
+            "kode_kabkota": "6503",
+            "nama_kabkota": "Tana Tidung"
+        },
+        {
+            "kode_kabkota": "6504",
+            "nama_kabkota": "Nunukan"
+        },
+        {
+            "kode_kabkota": "6571",
+            "nama_kabkota": "Kota Tarakan"
+        }
+    ],
+    "71prop": [
+        {
+            "kode_kabkota": "7101",
+            "nama_kabkota": "Bolaang Mongondow"
+        },
+        {
+            "kode_kabkota": "7102",
+            "nama_kabkota": "Minahasa"
+        },
+        {
+            "kode_kabkota": "7103",
+            "nama_kabkota": "Kepulauan Sangihe"
+        },
+        {
+            "kode_kabkota": "7104",
+            "nama_kabkota": "Kepulauan Talaud"
+        },
+        {
+            "kode_kabkota": "7105",
+            "nama_kabkota": "Minahasa Selatan"
+        },
+        {
+            "kode_kabkota": "7106",
+            "nama_kabkota": "Minahasa Utara"
+        },
+        {
+            "kode_kabkota": "7107",
+            "nama_kabkota": "Bolaang Mongondow Utara"
+        },
+        {
+            "kode_kabkota": "7108",
+            "nama_kabkota": "Kepulauan Siau Tagulandang Biaro"
+        },
+        {
+            "kode_kabkota": "7109",
+            "nama_kabkota": "Minahasa Tenggara"
+        },
+        {
+            "kode_kabkota": "7110",
+            "nama_kabkota": "Bolaang Mongondow Selatan"
+        },
+        {
+            "kode_kabkota": "7111",
+            "nama_kabkota": "Bolaang Mongondow Timur"
+        },
+        {
+            "kode_kabkota": "7171",
+            "nama_kabkota": "Kota Manado"
+        },
+        {
+            "kode_kabkota": "7172",
+            "nama_kabkota": "Kota Bitung"
+        },
+        {
+            "kode_kabkota": "7173",
+            "nama_kabkota": "Kota Tomohon"
+        },
+        {
+            "kode_kabkota": "7174",
+            "nama_kabkota": "Kota Kotamobagu"
+        }
+    ],
+    "72prop": [
+        {
+            "kode_kabkota": "7201",
+            "nama_kabkota": "Banggai Kepulauan"
+        },
+        {
+            "kode_kabkota": "7202",
+            "nama_kabkota": "Banggai"
+        },
+        {
+            "kode_kabkota": "7203",
+            "nama_kabkota": "Morowali"
+        },
+        {
+            "kode_kabkota": "7204",
+            "nama_kabkota": "Poso"
+        },
+        {
+            "kode_kabkota": "7205",
+            "nama_kabkota": "Donggala"
+        },
+        {
+            "kode_kabkota": "7206",
+            "nama_kabkota": "Toli-Toli"
+        },
+        {
+            "kode_kabkota": "7207",
+            "nama_kabkota": "Buol"
+        },
+        {
+            "kode_kabkota": "7208",
+            "nama_kabkota": "Parigi Moutong"
+        },
+        {
+            "kode_kabkota": "7209",
+            "nama_kabkota": "Tojo Una-Una"
+        },
+        {
+            "kode_kabkota": "7210",
+            "nama_kabkota": "Sigi"
+        },
+        {
+            "kode_kabkota": "7211",
+            "nama_kabkota": "Banggai Laut"
+        },
+        {
+            "kode_kabkota": "7212",
+            "nama_kabkota": "Morowali Utara"
+        },
+        {
+            "kode_kabkota": "7271",
+            "nama_kabkota": "Kota Palu"
+        }
+    ],
+    "73prop": [
+        {
+            "kode_kabkota": "7301",
+            "nama_kabkota": "Kepulauan Selayar"
+        },
+        {
+            "kode_kabkota": "7302",
+            "nama_kabkota": "Bulukumba"
+        },
+        {
+            "kode_kabkota": "7303",
+            "nama_kabkota": "Bantaeng"
+        },
+        {
+            "kode_kabkota": "7304",
+            "nama_kabkota": "Jeneponto"
+        },
+        {
+            "kode_kabkota": "7305",
+            "nama_kabkota": "Takalar"
+        },
+        {
+            "kode_kabkota": "7306",
+            "nama_kabkota": "Gowa"
+        },
+        {
+            "kode_kabkota": "7307",
+            "nama_kabkota": "Sinjai"
+        },
+        {
+            "kode_kabkota": "7308",
+            "nama_kabkota": "Bone"
+        },
+        {
+            "kode_kabkota": "7309",
+            "nama_kabkota": "Maros"
+        },
+        {
+            "kode_kabkota": "7310",
+            "nama_kabkota": "Pangkajene Kepulauan"
+        },
+        {
+            "kode_kabkota": "7311",
+            "nama_kabkota": "Barru"
+        },
+        {
+            "kode_kabkota": "7312",
+            "nama_kabkota": "Soppeng"
+        },
+        {
+            "kode_kabkota": "7313",
+            "nama_kabkota": "Wajo"
+        },
+        {
+            "kode_kabkota": "7314",
+            "nama_kabkota": "Sidenreng Rappang"
+        },
+        {
+            "kode_kabkota": "7315",
+            "nama_kabkota": "Pinrang"
+        },
+        {
+            "kode_kabkota": "7316",
+            "nama_kabkota": "Enrekang"
+        },
+        {
+            "kode_kabkota": "7317",
+            "nama_kabkota": "Luwu"
+        },
+        {
+            "kode_kabkota": "7318",
+            "nama_kabkota": "Tana Toraja"
+        },
+        {
+            "kode_kabkota": "7322",
+            "nama_kabkota": "Luwu Utara"
+        },
+        {
+            "kode_kabkota": "7325",
+            "nama_kabkota": "Luwu Timur"
+        },
+        {
+            "kode_kabkota": "7326",
+            "nama_kabkota": "Toraja Utara"
+        },
+        {
+            "kode_kabkota": "7371",
+            "nama_kabkota": "Kota Makassar"
+        },
+        {
+            "kode_kabkota": "7372",
+            "nama_kabkota": "Kota Pare-pare"
+        },
+        {
+            "kode_kabkota": "7373",
+            "nama_kabkota": "Kota Palopo"
+        }
+    ],
+    "74prop": [
+        {
+            "kode_kabkota": "7401",
+            "nama_kabkota": "Buton"
+        },
+        {
+            "kode_kabkota": "7402",
+            "nama_kabkota": "Muna"
+        },
+        {
+            "kode_kabkota": "7403",
+            "nama_kabkota": "Konawe"
+        },
+        {
+            "kode_kabkota": "7404",
+            "nama_kabkota": "Kolaka"
+        },
+        {
+            "kode_kabkota": "7405",
+            "nama_kabkota": "Konawe Selatan"
+        },
+        {
+            "kode_kabkota": "7406",
+            "nama_kabkota": "Bombana"
+        },
+        {
+            "kode_kabkota": "7407",
+            "nama_kabkota": "Wakatobi"
+        },
+        {
+            "kode_kabkota": "7408",
+            "nama_kabkota": "Kolaka Utara"
+        },
+        {
+            "kode_kabkota": "7409",
+            "nama_kabkota": "Buton Utara"
+        },
+        {
+            "kode_kabkota": "7410",
+            "nama_kabkota": "Konawe Utara"
+        },
+        {
+            "kode_kabkota": "7411",
+            "nama_kabkota": "Kolaka Timur"
+        },
+        {
+            "kode_kabkota": "7412",
+            "nama_kabkota": "Konawe Kepulauan"
+        },
+        {
+            "kode_kabkota": "7413",
+            "nama_kabkota": "Muna Barat"
+        },
+        {
+            "kode_kabkota": "7414",
+            "nama_kabkota": "Buton Tengah"
+        },
+        {
+            "kode_kabkota": "7415",
+            "nama_kabkota": "Buton Selatan"
+        },
+        {
+            "kode_kabkota": "7471",
+            "nama_kabkota": "Kota Kendari"
+        },
+        {
+            "kode_kabkota": "7472",
+            "nama_kabkota": "Kota Bau-Bau"
+        }
+    ],
+    "75prop": [
+        {
+            "kode_kabkota": "7501",
+            "nama_kabkota": "Boalemo"
+        },
+        {
+            "kode_kabkota": "7502",
+            "nama_kabkota": "Gorontalo"
+        },
+        {
+            "kode_kabkota": "7503",
+            "nama_kabkota": "Pohuwato"
+        },
+        {
+            "kode_kabkota": "7504",
+            "nama_kabkota": "Bone Bolango"
+        },
+        {
+            "kode_kabkota": "7505",
+            "nama_kabkota": "Gorontalo Utara"
+        },
+        {
+            "kode_kabkota": "7571",
+            "nama_kabkota": "Kota Gorontalo"
+        }
+    ],
+    "76prop": [
+        {
+            "kode_kabkota": "7602",
+            "nama_kabkota": "Polewali Mandar"
+        }
+    ],
+    "81prop": [
+        {
+            "kode_kabkota": "8101",
+            "nama_kabkota": "Maluku Tenggara Barat"
+        },
+        {
+            "kode_kabkota": "8102",
+            "nama_kabkota": "Maluku Tenggara"
+        },
+        {
+            "kode_kabkota": "8103",
+            "nama_kabkota": "Maluku Tengah"
+        },
+        {
+            "kode_kabkota": "8104",
+            "nama_kabkota": "Buru"
+        },
+        {
+            "kode_kabkota": "8105",
+            "nama_kabkota": "Kepulauan Aru"
+        },
+        {
+            "kode_kabkota": "8106",
+            "nama_kabkota": "Seram Bagian Barat"
+        },
+        {
+            "kode_kabkota": "8107",
+            "nama_kabkota": "Seram Bagian Timur"
+        },
+        {
+            "kode_kabkota": "8108",
+            "nama_kabkota": "Maluku Barat Daya"
+        },
+        {
+            "kode_kabkota": "8109",
+            "nama_kabkota": "Buru Selatan"
+        },
+        {
+            "kode_kabkota": "8171",
+            "nama_kabkota": "Kota Ambon"
+        },
+        {
+            "kode_kabkota": "8172",
+            "nama_kabkota": "Kota Tual"
+        }
+    ],
+    "82prop": [
+        {
+            "kode_kabkota": "8201",
+            "nama_kabkota": "Halmahera Barat"
+        },
+        {
+            "kode_kabkota": "8202",
+            "nama_kabkota": "Halmahera Tengah"
+        },
+        {
+            "kode_kabkota": "8203",
+            "nama_kabkota": "Kepulauan Sula"
+        },
+        {
+            "kode_kabkota": "8204",
+            "nama_kabkota": "Halmahera Selatan"
+        },
+        {
+            "kode_kabkota": "8205",
+            "nama_kabkota": "Halmahera Utara"
+        },
+        {
+            "kode_kabkota": "8206",
+            "nama_kabkota": "Halmahera Timur"
+        },
+        {
+            "kode_kabkota": "8207",
+            "nama_kabkota": "Pulau Morotai"
+        },
+        {
+            "kode_kabkota": "8208",
+            "nama_kabkota": "Pulau Taliabu"
+        },
+        {
+            "kode_kabkota": "8271",
+            "nama_kabkota": "Kota Ternate"
+        },
+        {
+            "kode_kabkota": "8272",
+            "nama_kabkota": "Kota Tidore Kepulauan"
+        }
+    ],
+    "91prop": [
+        {
+            "kode_kabkota": "7601",
+            "nama_kabkota": "Majene"
+        },
+        {
+            "kode_kabkota": "7603",
+            "nama_kabkota": "Mamasa"
+        },
+        {
+            "kode_kabkota": "7604",
+            "nama_kabkota": "Mamuju"
+        },
+        {
+            "kode_kabkota": "7605",
+            "nama_kabkota": "Pasangkayu"
+        },
+        {
+            "kode_kabkota": "7606",
+            "nama_kabkota": "Mamuju Tengah"
+        },
+        {
+            "kode_kabkota": "9101",
+            "nama_kabkota": "Fakfak"
+        },
+        {
+            "kode_kabkota": "9102",
+            "nama_kabkota": "Kaimana"
+        },
+        {
+            "kode_kabkota": "9103",
+            "nama_kabkota": "Teluk Wondama"
+        },
+        {
+            "kode_kabkota": "9104",
+            "nama_kabkota": "Teluk Bintuni"
+        },
+        {
+            "kode_kabkota": "9105",
+            "nama_kabkota": "Manokwari"
+        },
+        {
+            "kode_kabkota": "9106",
+            "nama_kabkota": "Sorong Selatan"
+        },
+        {
+            "kode_kabkota": "9107",
+            "nama_kabkota": "Sorong"
+        },
+        {
+            "kode_kabkota": "9108",
+            "nama_kabkota": "Raja Ampat"
+        },
+        {
+            "kode_kabkota": "9109",
+            "nama_kabkota": "Tambrauw"
+        },
+        {
+            "kode_kabkota": "9110",
+            "nama_kabkota": "Maybrat"
+        },
+        {
+            "kode_kabkota": "9111",
+            "nama_kabkota": "Manokwari Selatan"
+        },
+        {
+            "kode_kabkota": "9112",
+            "nama_kabkota": "Pegunungan Arfak"
+        },
+        {
+            "kode_kabkota": "9171",
+            "nama_kabkota": "Kota Sorong"
+        }
+    ],
+    "92prop": [
+        {
+            "kode_kabkota": "9201",
+            "nama_kabkota": "Merauke"
+        },
+        {
+            "kode_kabkota": "9202",
+            "nama_kabkota": "Jayawijaya"
+        },
+        {
+            "kode_kabkota": "9203",
+            "nama_kabkota": "Jayapura"
+        },
+        {
+            "kode_kabkota": "9204",
+            "nama_kabkota": "Nabire"
+        },
+        {
+            "kode_kabkota": "9205",
+            "nama_kabkota": "Biak Numfor"
+        },
+        {
+            "kode_kabkota": "9208",
+            "nama_kabkota": "Kepulauan Yapen"
+        },
+        {
+            "kode_kabkota": "9210",
+            "nama_kabkota": "Paniai"
+        },
+        {
+            "kode_kabkota": "9211",
+            "nama_kabkota": "Puncak Jaya"
+        },
+        {
+            "kode_kabkota": "9212",
+            "nama_kabkota": "Mimika"
+        },
+        {
+            "kode_kabkota": "9213",
+            "nama_kabkota": "Boven Digoel"
+        },
+        {
+            "kode_kabkota": "9214",
+            "nama_kabkota": "Mappi"
+        },
+        {
+            "kode_kabkota": "9215",
+            "nama_kabkota": "Asmat"
+        },
+        {
+            "kode_kabkota": "9216",
+            "nama_kabkota": "Yahukimo"
+        },
+        {
+            "kode_kabkota": "9217",
+            "nama_kabkota": "Pegunungan Bintang"
+        },
+        {
+            "kode_kabkota": "9218",
+            "nama_kabkota": "Tolikara"
+        },
+        {
+            "kode_kabkota": "9219",
+            "nama_kabkota": "Sarmi"
+        },
+        {
+            "kode_kabkota": "9220",
+            "nama_kabkota": "Keerom"
+        },
+        {
+            "kode_kabkota": "9226",
+            "nama_kabkota": "Waropen"
+        },
+        {
+            "kode_kabkota": "9227",
+            "nama_kabkota": "Supiori"
+        },
+        {
+            "kode_kabkota": "9228",
+            "nama_kabkota": "Mamberamo Raya"
+        },
+        {
+            "kode_kabkota": "9229",
+            "nama_kabkota": "Nduga"
+        },
+        {
+            "kode_kabkota": "9230",
+            "nama_kabkota": "Lanny Jaya"
+        },
+        {
+            "kode_kabkota": "9231",
+            "nama_kabkota": "Mamberamo Tengah"
+        },
+        {
+            "kode_kabkota": "9232",
+            "nama_kabkota": "Yalimo"
+        },
+        {
+            "kode_kabkota": "9233",
+            "nama_kabkota": "Puncak"
+        },
+        {
+            "kode_kabkota": "9234",
+            "nama_kabkota": "Dogiyai"
+        },
+        {
+            "kode_kabkota": "9235",
+            "nama_kabkota": "Intan Jaya"
+        },
+        {
+            "kode_kabkota": "9236",
+            "nama_kabkota": "Deiyai"
+        },
+        {
+            "kode_kabkota": "9271",
+            "nama_kabkota": "Kota Jayapura"
+        }
+    ]
+}
