@@ -94,14 +94,15 @@ for key, row in faskes_df.items():
     alamat =  str(row['alamat'])
     lat =  row['lat']
     lon =  row['lon']
-    
-    prov  = Province.select().where(Province.nama_prov==row['provinsi'])
-    if prov.count() < 1:
-        prov = Province.create(prov_id=idprov, nama_prov=row['provinsi'])
-        idprov = idprov + 1
+    if row['provinsi']:
+        prov  = Province.select().where(Province.nama_prov==row['provinsi'])
+        if prov.count() < 1:
+            prov = Province.create(prov_id=idprov, nama_prov=row['provinsi'])
+            idprov = idprov + 1
+        else:
+            prov = prov.get()
     else:
-        prov = prov.get()
-
+        prov = None
     try:
         jenisfaskes = row['tipe']
     except:
@@ -113,14 +114,15 @@ for key, row in faskes_df.items():
         jenis = jenis.get()
     rs = RumahSakit.select().where(RumahSakit.kode_rs==row['kode'])
     if rs.count() < 1:
-        rs = RumahSakit.create(prov_id=prov, 
-            kode_rs=row['kode'], 
-            nama_unit=row['nama'], 
-            alamat=row['alamat'], 
-            jenis_faskes=jenis,
-            lat = row['lat'],
-            lon = row['lon']
-        )
+        if row['provinsi']:
+            rs = RumahSakit.create(prov_id=prov, 
+                kode_rs=row['kode'], 
+                nama_unit=row['nama'], 
+                alamat=row['alamat'], 
+                jenis_faskes=jenis,
+                lat = row['lat'],
+                lon = row['lon']
+            )
     else:
         rs = rs.get()
     kabkot = RumahSakitKab.select().where(RumahSakitKab.rumahsakit==rs)
