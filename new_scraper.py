@@ -12,6 +12,7 @@ import peewee as pw
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 import requests_random_user_agent
+#import cloudscraper
 from bs4 import BeautifulSoup
 import dateparser
 
@@ -140,15 +141,41 @@ for key, row in faskes_df.items():
     i=1
     while(i<=2): 
         #if (satker == '3471052'):
+        #s = cloudscraper.create_scraper()
         link = 'http://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs='+satker+'&jenis='+str(i)
         s = requests.Session()
-        r = s.get(link)
+        try:
+            r = s.get(link)
+            reqs = True
+        except requests.exceptions.ConnectionError:
+            reqs = False
         try:
             data = r.content
             lanjut = True
         except:
             data = None 
             lanjut = False
+        if not reqs:
+            import selenium
+            from selenium import webdriver
+            import dateparser
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.add_argument('--no-sandbox')
+            chrome_options.add_argument('--window-size=1420,1080')
+            chrome_options.add_argument('--headless')
+            chrome_options.add_argument('--disable-gpu')
+            browser = webdriver.Chrome(chrome_options=chrome_options)
+            browser.get(link)
+            #print(r)
+            try:
+                data = browser.page_source
+                lanjut = True
+            except:
+                lanjut = False
+            browser.stop_client()
+            browser.close()
+            browser.quit()
+
         if lanjut:
             url = BeautifulSoup(data,"lxml")
             print(str(satker)+'-'+str(i))
