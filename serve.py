@@ -187,6 +187,40 @@ def covokupansi(idprov):
     
     return jsonify(result)
 
+@app.route('/table-kamar', methods=['GET'])
+def tablekamar():
+    try:
+        prov = int(request.args.get('prov'))
+    except:
+        prov = None 
+    try:
+        jenis_kamar = int(request.args.get('kamar'))
+    except:
+        jenis_kamar = None
+
+    provinces = Province.select()
+    kamars = Jenis_Ruang.select()
+    if prov > 0:
+        prov = Province.select().where(Province.prov_id==int(prov)).get()
+        if jenis_kamar:
+            ruang = Jenis_Ruang.select().where(Jenis_Ruang.id==int(jenis_kamar)).get()
+            occ = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==prov, CovidOccupations.jenis_ruang==ruang).group_by(CovidOccupations.rumahsakit)
+        else:
+            occ = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==prov).group_by(CovidOccupations.rumahsakit)
+        return render_template('table-kamar.html', provinces=provinces, kamars=kamars, occs=occ)
+    else:
+        return render_template('table-kamar.html', provinces=provinces, kamars=kamars, occs=None)
+
+@app.route('/getkamar/<int:idkm>/<int:idrs>', methods=["GET"])
+def getkamar(idkm,idrs):
+    try:
+        rumkit = RumahSakit.select().where(RumahSakit.id==int(idrs))
+        kamar  = Jenis_Ruang.select().where(Jenis_Ruang.id==int(idkm))
+        occ = CovidOccupations.select().where(CovidOccupations.rumahsakit==rumkit, CovidOccupations.jenis_ruang==kamar).order_by(CovidOccupations.last_update.desc()).limit(1).dicts()
+    except:
+        occ = []
+    return jsonify({'result':list(occ)})
+
 @app.route('/isolations', methods=['GET'])
 def isolations():
     kelas = Kelas_Ruang.select().where(Kelas_Ruang.title.contains('isolasi'))
@@ -196,7 +230,7 @@ def isolations():
     return jsonify({'rows':list(isolasi)})
 
 if __name__ == '__main__':
-   app.run(debug=False)
+   app.run(debug=True)
 
 
 
