@@ -115,7 +115,7 @@ for key, row in faskes_df.items():
         jenis = jenis.get()
     rs = RumahSakit.select().where(RumahSakit.kode_rs==row['kode'])
     if rs.count() < 1:
-        if row['provinsi']:
+        if 'provinsi' in row.keys():
             rs = RumahSakit.create(prov_id=prov, 
                 kode_rs=row['kode'], 
                 nama_unit=row['nama'], 
