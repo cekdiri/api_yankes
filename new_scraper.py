@@ -95,7 +95,7 @@ for key, row in faskes_df.items():
     alamat =  str(row['alamat'])
     lat =  row['lat']
     lon =  row['lon']
-    if row['provinsi']:
+    if 'provinsi' in row.keys():
         prov  = Province.select().where(Province.nama_prov==row['provinsi'])
         if prov.count() < 1:
             prov = Province.create(prov_id=idprov, nama_prov=row['provinsi'])
