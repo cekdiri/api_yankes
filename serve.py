@@ -200,16 +200,16 @@ def tablekamar():
 
     provinces = Province.select()
     kamars = Jenis_Ruang.select()
-    if prov > 0:
+    if prov:
         prov = Province.select().where(Province.prov_id==int(prov)).get()
         if jenis_kamar:
             ruang = Jenis_Ruang.select().where(Jenis_Ruang.id==int(jenis_kamar)).get()
             occ = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==prov, CovidOccupations.jenis_ruang==ruang).group_by(CovidOccupations.rumahsakit)
         else:
             occ = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==prov).group_by(CovidOccupations.rumahsakit)
-        return render_template('table-kamar.html', provinces=provinces, kamars=kamars, occs=occ)
+        return render_template('table-hscroll.html', provinces=provinces, kamars=kamars, occs=occ)
     else:
-        return render_template('table-kamar.html', provinces=provinces, kamars=kamars, occs=None)
+        return render_template('table-hscroll.html', provinces=provinces, kamars=kamars, occs=None)
 
 @app.route('/getkamar/<int:idkm>/<int:idrs>', methods=["GET"])
 def getkamar(idkm,idrs):
