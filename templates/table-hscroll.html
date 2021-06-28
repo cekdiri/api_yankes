@@ -88,12 +88,12 @@
  </td>
  {% endfor %}
  {% else %}
- <td>{{oc.rumahsakit.nama_unit}}</td>
- <td>{{oc.rumahsakit.alamat}}</td>
- <td><a href="http://maps.google.com/?q={{oc.rumahsakit.lat}},{{oc.rumahsakit.lon}}" target="_blank">Map</a></td>
+ <td>{{oc.rumahsakit.rumahsakit.nama_unit}}</td>
+ <td>{{oc.rumahsakit.rumahsakit.alamat}}</td>
+ <td><a href="http://maps.google.com/?q={{oc.rumahsakit.rumahsakit.lat}},{{oc.rumahsakit.rumahsakit.lon}}" target="_blank">Map</a></td>
  <td>
  <div class="width-100">
- <div class="kamarkosong" data-kamar="{{request.args.get('kamar')}}_{{oc.rumahsakit.id}}"></div>
+ <div class="kamarkosong" data-kamar="{{request.args.get('kamar')}}_{{oc.rumahsakit.rumahsakit.id}}"></div>
  <div class="lupdate"></div>
  </div>
  </td>
@@ -154,7 +154,7 @@ div.dataTables_wrapper {
 }
 </style>
 <script type="text/javascript">
-/*
+{% if request.args.get('kamar') %}
 $(".kamarkosong").each(function(){
     var kamar = $(this).data('kamar');
     var res   = kamar.split('_');
@@ -184,7 +184,7 @@ $(".kamarkosong").each(function(){
         }
     })
 });
-*/
+{% else %}
 $('document').ready(function(){
     $('#table-id').DataTable( {
         scrollY:        600,
@@ -194,6 +194,6 @@ $('document').ready(function(){
         fixedColumns:   true
     } );
 });
-
+{% endif %}
 </script>
 </html>
