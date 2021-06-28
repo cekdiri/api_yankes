@@ -74,16 +74,16 @@
  {% if not request.args.get('kamar')%}
  <td>
  <div class="width-200">
- <div>{{oc.rumahsakit.nama_unit}}</div>
- <div>{{oc.rumahsakit.alamat}}</div>
- <div><a href="http://maps.google.com/?q={{oc.rumahsakit.lat}},{{oc.rumahsakit.lon}}" target="_blank">Map</a></div>
+ <div>{{oc.rumahsakit.rumahsakit.nama_unit}}</div>
+ <div>{{oc.rumahsakit.rumahsakit.alamat}}</div>
+ <div><a href="http://maps.google.com/?q={{oc.rumahsakit.rumahsakit.lat}},{{oc.rumahsakit.rumahsakit.lon}}" target="_blank">Map</a></div>
  </div>
  </td>
  {% for kamar in kamars %}
  <td>
  <div class="width-100">
- <div class="kamarkosong" data-kamar="{{kamar.id}}_{{oc.rumahsakit.id}}"></div>
- <div class="lupdate"></div>
+ <div class="kamarkosong">{{oc.okupansi[kamar.id].total_kosong}}</div>
+ <div class="lupdate">{{oc.okupansi[kamar.id].last_update}}</div>
  </div>
  </td>
  {% endfor %}
@@ -154,6 +154,7 @@ div.dataTables_wrapper {
 }
 </style>
 <script type="text/javascript">
+/*
 $(".kamarkosong").each(function(){
     var kamar = $(this).data('kamar');
     var res   = kamar.split('_');
@@ -182,6 +183,16 @@ $(".kamarkosong").each(function(){
             }
         }
     })
+});
+*/
+$('document').ready(function(){
+    $('#table-id').DataTable( {
+        scrollY:        600,
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   true
+    } );
 });
 
 </script>

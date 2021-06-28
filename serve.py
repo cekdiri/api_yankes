@@ -208,7 +208,18 @@ def tablekamar():
                 occ = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==prov, CovidOccupations.jenis_ruang==ruang).group_by(CovidOccupations.rumahsakit)
             else:
                 occ = CovidOccupations.select().join(RumahSakit).where(RumahSakit.prov_id==prov).group_by(CovidOccupations.rumahsakit)
-            return render_template('table-hscroll.html', provinces=provinces, kamars=kamars, occs=occ)
+            ocrs = []
+            for oc in occ:
+                okupansi = {}
+                for kamar in kamars:
+                    try:
+                        kondisi = CovidOccupations.select().where(CovidOccupations.rumahsakit==oc.rumahsakit, CovidOccupations.jenis_ruang==kamar).order_by(CovidOccupations.last_update.desc()).limit(1).get()
+                        okupansi[kamar.id] = {'total_kosong': kondisi.total_kosong, 'last_update': kondisi.last_update} 
+                    except:
+                        okupansi[kamar.id] = {'total_kosong': 0, 'last_update': ''} 
+                ocrs.append({'rumahsakit': oc, 'okupansi': okupansi })
+
+            return render_template('table-hscroll.html', provinces=provinces, kamars=kamars, occs=ocrs)
         else:
             return render_template('table-hscroll.html', provinces=provinces, kamars=kamars, occs=None)
     else:
