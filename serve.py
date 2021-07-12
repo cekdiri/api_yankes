@@ -216,7 +216,7 @@ def get_paginated_list(idprov, url, start, limit):
             obj['result'].append(subresult)
             
     
-    return jsonify(obj)
+    return obj
 
 @app.route('/table-kamar', methods=['GET'])
 def tablekamar():
