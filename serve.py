@@ -156,8 +156,8 @@ def get_paginated_list(idprov, url, start, limit):
     for rum in result:
         subresult = {}
         subresult['kamar'] = []
-        if len(result) > 0:
-            if not rum.nama_unit in [a['nama'] for a in result]:
+        if len(obj['result']) > 0:
+            if not rum.nama_unit in [a['nama'] for a in obj['result']]:
                 subresult['nama'] = rum.nama_unit
                 subresult['alamat'] = {
                     'alamat': rum.alamat,
@@ -167,11 +167,11 @@ def get_paginated_list(idprov, url, start, limit):
                 subresult['kamar'] = []
             else:
                 index = None
-                for idx,a in enumerate(result):
+                for idx,a in enumerate(obj['result']):
                     if a['nama'] == rum.nama_unit:
                         index = idx
                 if index:
-                    subresult = result[idx]
+                    subresult = obj['result'][idx]
         else:
             subresult['nama'] = rum.nama_unit
             subresult['alamat'] = {
