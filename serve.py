@@ -123,7 +123,7 @@ def view():
 		idprov, 
 		'/ketersediaan-kamar/'+idprov+'/', 
 		start=request.args.get('start', 1), 
-		5
+		limit=5
 	))
 
 
