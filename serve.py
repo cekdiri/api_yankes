@@ -118,7 +118,7 @@ def okupansi(idprov):
 
 
 @app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
-def view():
+def view(idprov):
 	return jsonify(get_paginated_list(
 		idprov, 
 		'/ketersediaan-kamar/'+idprov+'/', 
