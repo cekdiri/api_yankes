@@ -118,11 +118,42 @@ def okupansi(idprov):
 
 
 @app.route('/ketersediaan-kamar/<int:idprov>',  methods=['GET'])
-def covokupansi(idprov):
+def view():
+	return jsonify(get_paginated_list(
+		idprov, 
+		'/ketersediaan-kamar/'+idprov+'/', 
+		start=request.args.get('start', 1), 
+		5
+	))
+
+
+def get_paginated_list(idprov, url, start, limit):
     prov = Province.select().where(Province.prov_id==idprov).get()
     rumkit = RumahSakit.select().where(RumahSakit.prov_id==prov)
+    count = rumkit.count()
+    obj = {}
+    obj['start'] = start
+    obj['limit'] = limit
+    obj['count'] = count
+    if (count < start):
+        return jsonify({'result': 'ERROR'})
+    if start == 1:
+        obj['previous'] = ''
+    else:
+        start_copy = max(1, start - limit)
+        limit_copy = start - 1
+        obj['previous'] = url + '?start=%d&limit=%d' % (start_copy, limit_copy)
+    if start + limit > count:
+        obj['next'] = ''
+    else:
+        start_copy = start + limit
+        obj['next'] = url + '?start=%d&limit=%d' % (start_copy, limit)
     result = []
     for rum in rumkit:
+        result.append(rum)
+    result = result[(start - 1):(start - 1 + limit)]
+    obj['result'] = []
+    for rum in result:
         subresult = {}
         subresult['kamar'] = []
         if len(result) > 0:
@@ -182,10 +213,10 @@ def covokupansi(idprov):
                             'last_update': oc.last_update
                         })
         if len(subresult['kamar']) > 0:
-            result.append(subresult)
+            obj['result'].append(subresult)
             
     
-    return jsonify(result)
+    return jsonify(obj)
 
 @app.route('/table-kamar', methods=['GET'])
 def tablekamar():
