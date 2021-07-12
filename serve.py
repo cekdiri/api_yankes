@@ -121,7 +121,7 @@ def okupansi(idprov):
 def view(idprov):
 	return jsonify(get_paginated_list(
 		idprov, 
-		'/ketersediaan-kamar/'+idprov+'/', 
+		'/ketersediaan-kamar/'+str(idprov)+'/', 
 		start=request.args.get('start', 1), 
 		limit=5
 	))
