@@ -132,9 +132,12 @@ def get_paginated_list(idprov, url, start, limit):
     rumkit = RumahSakit.select().where(RumahSakit.prov_id==prov)
     count = rumkit.count()
     obj = {}
+    start = int(start)
+    limit = int(limit)
     obj['start'] = start
     obj['limit'] = limit
     obj['count'] = count
+    
     if (count < int(start)):
         return jsonify({'result': 'ERROR'})
     if start == 1:
