@@ -121,7 +121,7 @@ def okupansi(idprov):
 def view(idprov):
 	return jsonify(get_paginated_list(
 		idprov, 
-		'/ketersediaan-kamar/'+str(idprov)+'/', 
+		'https://rest.cekdiri.id/ketersediaan-kamar/'+str(idprov), 
 		start=request.args.get('start', 1), 
 		limit=5
 	))
@@ -135,7 +135,7 @@ def get_paginated_list(idprov, url, start, limit):
     obj['start'] = start
     obj['limit'] = limit
     obj['count'] = count
-    if (count < start):
+    if (count < int(start)):
         return jsonify({'result': 'ERROR'})
     if start == 1:
         obj['previous'] = ''
